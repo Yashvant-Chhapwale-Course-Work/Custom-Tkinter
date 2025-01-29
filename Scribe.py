@@ -76,7 +76,7 @@ class Scribe(ctk.CTk):
         self.add_status_bar()
 
         # Initialize "genai" Model
-        gemini_key="AIzaSyAJL-6Xxn5v1TI31bGLmBHOWwdRHDBLRi0" # Store the API Key in the variable. 
+        gemini_key="API_KEY_HERE" # Store the API Key in the variable. 
         genai.configure(api_key = gemini_key)
         self.model = genai.GenerativeModel('gemini-pro')
 
