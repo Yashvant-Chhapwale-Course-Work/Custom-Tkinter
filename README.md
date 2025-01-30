@@ -81,6 +81,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - **For ` Windows ` Systems:** <br>
      `Activate` the `Virtual Environment` in Python by running the following **prompt**:
      ```
+     # For Command Prompt:
+     myenv\Scripts\activate
+
+     # For Powershell:
      myenv\Scripts\Activate.ps1
      ```
 - **For ` Linux / MacOS ` Systems:** <br>
@@ -88,5 +92,17 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
      ```
      source myenv/bin/activate
      ```
+<br>
 
+### 4. Deactivate the Virtual Environment:
+- **For ` Windows ` Systems:** <br>
+     After use, `Deactivate` the `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     deactivate
+     ```
+- **For ` Linux / MacOS ` Systems:** <br>
+     After use, `Deactivate` the `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     deactivate
+     ```
 ---
