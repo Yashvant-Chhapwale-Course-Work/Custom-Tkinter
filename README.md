@@ -51,6 +51,16 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Creating a Python Virtual Environment
-
+### Ensure Python is Installed:
+- **For ` Windows ` Systems:**
+     Ensure Python is installed by running the following **prompt**:
+     ```
+     python --version
+     ```
+- **For ` Linux / MacOS ` Systems:**
+     Ensure Python is installed by running the following **prompt**:
+     ```
+     python3 --version
+     ```
 
 ---
