@@ -23,3 +23,7 @@ CustomTkinter is a modern UI library for Python that enhances Tkinter with a sle
 - `Rounded_Corners and Hover_Effects:` Aesthetic improvements over standard Tkinter.
 - `Built-in Colors & Styling:` Easily customizable UI elements.
 - `Scalability:` Responsive UI that adapts to different screen sizes.
+
+---
+
+# Development RoadMap
