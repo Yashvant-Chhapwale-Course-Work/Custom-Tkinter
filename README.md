@@ -14,7 +14,7 @@ This repository simulates a development **roadmap** for creating a "Custom_Tkint
 
 ---
 
-# About Custom-Tkinter
+## About Custom-Tkinter
 CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with a sleek, customizable look using themes, rounded corners, and improved widgets. It is built on top of Tkinter but offers a more modern design with dark mode support.
 
 ### Features:
