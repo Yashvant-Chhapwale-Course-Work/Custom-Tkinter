@@ -38,14 +38,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | TITLE                                                                                                          | SECTION_LINK                                                                                  |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 1.  **Creating A Python Virtual Environment**                                                                  | >> [` CHECK CONTENT `](#creating-a-python-virtual-environment)                                |
-| 2.  **Git Version Verificaton**                                                                                | >> [` CHECK CONTENT `](#version-verification)                                                 |
-| 3.  **Configure Git Credentials Using Git_CLI**                                                                | >> [` CHECK CONTENT `](#configure-git-using-git_cli)                                          |
-| 4.  **Configure Git Credentials Using Git_CLI [For a Specific Repository / Project]**                          | >> [` CHECK CONTENT `](#configure-git-for-a-specific-repositoryproject-using-git_cli)         |
-| 5.  **Configure Git Credentials Using GitHub_CLI (gh)**                                                        | >> [` CHECK CONTENT `](#configure-git-using-github_cli-gh)                                    |
-| 6.  **Configure Git Credentials [For GitHub Desktop]**                                                         | >> [` CHECK CONTENT `](#configure-git-credentials-for-github-desktop)                         |
-| 7.  **Configure Git Credentials [For VSCode with `GitHub Pull Requests Extension`]**                           | >> [` CHECK CONTENT `](#if-github-pull-requests-extension-is-enabled)                         |
-| 8.  **Configure Git Credentials [For VSCode without `GitHub Pull Requests Extension`]**                        | >> [` CHECK CONTENT `](#if-github-pull-requests-extension-is-not-enabled)                     |
-| 9.  **GitHub Extensions For VSCode**                                                                           | >> [` CHECK CONTENT `](#vscode-extensions)                                                    |
+| 2.  **Installing Required Modules for the Application**                                                        | >> [` CHECK CONTENT `](#modules-installation)                                                 |
 </div>
 
 ---
@@ -105,4 +98,32 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
      ```
      deactivate
      ```
+     
 ---
+
+## Modules Installation
+### 1. Ensure Python is Installed:
+- **For ` Windows ` Systems:** <br>
+     Ensure Python is installed by running the following **prompt**:
+     ```
+     python --version
+     ```
+- **For ` Linux / MacOS ` Systems:** <br>
+     Ensure Python is installed by running the following **prompt**:
+     ```
+     python3 --version
+     ```
+<br>
+
+### 2. Create a Virtual Environment:
+- **For ` Windows ` Systems:** <br>
+     Create a `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     python -m venv myenv
+     ```
+- **For ` Linux / MacOS ` Systems:** <br>
+     Create a `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     python3 -m venv myenv
+     ```
+<br>
