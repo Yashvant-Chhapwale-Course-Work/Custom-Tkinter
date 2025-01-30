@@ -5,3 +5,6 @@
 # Custom_Tkinter
 
 This repository simulates a development roadmap for creating a "Custom\*Tkinter" Application namely, **Scribe_Smart Notes**.
+
+**For more information on "Scribe_Smart Notes" visit our [Page](https://github.com/Yashvant-Chhapwale/Scribe_Smart-Notes)**
+**Click [Download](https://github.com/Yashvant-Chhapwale/Scribe_Smart-Notes/releases) to start using "Scribe_Smart Notes"**
