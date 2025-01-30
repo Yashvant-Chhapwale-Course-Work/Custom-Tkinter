@@ -15,7 +15,7 @@ This repository simulates a development **roadmap** for creating a "Custom_Tkint
 ---
 
 # About Custom-Tkinter
-CustomTkinter is a modern UI library for Python that enhances Tkinter with a sleek, customizable look using themes, rounded corners, and improved widgets. It is built on top of Tkinter but offers a more modern design with dark mode support.
+CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with a sleek, customizable look using themes, rounded corners, and improved widgets. It is built on top of Tkinter but offers a more modern design with dark mode support.
 
 ### Features:
 - `Theming_Support:` Light, Dark, and System themes.
@@ -26,4 +26,20 @@ CustomTkinter is a modern UI library for Python that enhances Tkinter with a sle
 
 ---
 
-# Development RoadMap
+<div align="center">
+ <h1>Development RoadMap</h1>
+</div>
+
+<div align="center">
+ 
+| TITLE                                                                                                          | SECTION_LINK                                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.  **Git Setup_And_Configuration Instructions**                                                               | >> [` CHECK CONTENT `](https://github.com/Yashvant-Chhapwale-Course-Work/GitHub_Prompts/blob/main/Git_Setup.md)                                                    |  
+| 2.  **Personal Acess Tokens (PAT)**                                                                            | >> [` CHECK CONTENT `](https://github.com/Yashvant-Chhapwale-Course-Work/GitHub_Prompts/blob/main/Personal_Access_Tokens(PAT).md)                                  |
+| 3.  **Git-Credential-Manager (GCM) and Credential-Helper (CH)**                                                | >> [` CHECK CONTENT `](https://github.com/Yashvant-Chhapwale-Course-Work/GitHub_Prompts/blob/main/Git-Credential-Manager%20(GCM)%20and%20Credential-Helper(CH).md) |
+| 4.  **Git Repository Initialization**                                                                          | >> [` CHECK CONTENT `](https://github.com/Yashvant-Chhapwale-Course-Work/GitHub_Prompts/blob/main/Git_Repo_Initialization.md)                                      |
+| 5.  **Git Branches**                                                                                           | >> [` CHECK CONTENT `](https://github.com/Yashvant-Chhapwale-Course-Work/GitHub_Prompts/blob/main/Git_Branches.md)                                                 |
+| 6.  **Initialize-Commit-And-Push Requests**                                                                    | >> [` CHECK CONTENT `](https://github.com/Yashvant-Chhapwale-Course-Work/GitHub_Prompts/blob/main/Initialize_Commit_and_Push.md)                                   |
+</div>
+
+---
