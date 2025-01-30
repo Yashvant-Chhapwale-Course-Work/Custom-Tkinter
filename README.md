@@ -62,5 +62,31 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
      ```
      python3 --version
      ```
+<br>
+
+### 2. Create a Virtual Environment:
+- **For ` Windows ` Systems:** <br>
+     Create a `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     python -m venv myenv
+     ```
+- **For ` Linux / MacOS ` Systems:** <br>
+     Create a `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     python3 -m venv myenv
+     ```
+<br>
+
+### 3. Activate the Virtual Environment:
+- **For ` Windows ` Systems:** <br>
+     `Activate` the `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     myenv\Scripts\Activate.ps1
+     ```
+- **For ` Linux / MacOS ` Systems:** <br>
+     `Activate` the `Virtual Environment` in Python by running the following **prompt**:
+     ```
+     source myenv/bin/activate
+     ```
 
 ---
