@@ -48,3 +48,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 9.  **GitHub Extensions For VSCode**                                                                           | >> [` CHECK CONTENT `](#vscode-extensions)                                                    |
 
 ---
+
+## Creating a Python Virtual Environment
+
+
+---
