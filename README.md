@@ -106,6 +106,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - **`os`(Operating System) Library:** <br>
   - Provides functions to interact with the operating system.
   - Used for file handling, environment variables, and system commands. <br>
+  
 **Use the following `Import Statement` in your code:**
  ```
  import os
