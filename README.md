@@ -129,7 +129,9 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   - Ex:
       - `tkinter.filedialog`: A module in Tkinter for Opening and Saving files via `File_Dialog_Windows`.<br>
        <img src="https://github.com/user-attachments/assets/abfeacd9-e276-4cea-8dcd-358d1cc6d51d" width=350 height=200><br>
-      - `sys.path()`: 
+      - `tkinter.messagebox`: Provides `Pop_Up Dialog_Boxes` for messages, warnings, and errors.
+      - `tkinter.font`: Handles `Font-related Functionality` in Tkinter.
+      - `tkinter.ttk`: `Themed_Tkinter_Widgets(ttk)` for a more modern and consistent look. (Ex: `ttk.Notebook`, `ttk.Button`, `ttk.Label`, `ttk.Entry`, `ttk.Checkbutton`, `ttk.Combobox`, `ttk.Progressbar`)
   
    **Use the following `Import Statement` in your code:**
     ```
@@ -137,7 +139,16 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
     ```
     **OR**
      ```
-    from tkinter import filedialog, 
+    from tkinter import filedialog, messagebox. font, ttk
+    ```
+
+- **`threading` Library:** <br>
+  - Provides tools for running Multiple Threads in parallel.
+  - Useful for **Performing Background Tasks** without freezing the UI.
+  
+   **Use the following `Import Statement` in your code:**
+    ```
+    import threading
     ```
 <br>
 
