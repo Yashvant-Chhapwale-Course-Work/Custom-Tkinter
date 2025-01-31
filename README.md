@@ -105,8 +105,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. Required Standard_Libaries:
 - **`os`(Operating System) Library:** <br>
   - Provides functions to interact with the operating system.
-  - Used for file handling, environment variables, and system commands.
-  - Use the following `Import Statement` in your code:
+  - Used for file handling, environment variables, and system commands. <br>
+  **Use the following `Import Statement` in your code:**
     ```
     import os
     ```
@@ -120,7 +120,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 2. Required Third-Party_Libaries:
 - **`os`(Operating System) Library:** <br>
   - Provides functions to interact with the operating system.
-  - Used for file handling, environment variables, and system commands.
+ Used for file handling, environment variables, and system commands.
  ```
  import os
  ```
