@@ -183,7 +183,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
     
 - **`pyinstaller` Library:** <br>
   - It is used to convert Python_Scripts into standalone **Executables** (**.exe** for Windows, **.app** for macOS, etc).
-  - It bundles all dependencies into a single package so that users can run the application without installing Python.
+  - It bundles all dependencies into a single package so that users can run the application without installing Python. <br>
+  
   **Run the following Prompt to install Custom Tkinter:**
     ```
     pip install pyinstaller
