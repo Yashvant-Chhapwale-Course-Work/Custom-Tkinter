@@ -112,11 +112,16 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
     import os
     ```
 
-- **For ` Linux / MacOS ` Systems:** <br>
-     Ensure Python is installed by running the following **prompt**:
-     ```
-     python3 --version
-     ```
+- **`sys`(System) Library:** <br>
+  - Provides system-specific functions and parameters.
+  - Used for command-line arguments, interpreter interaction, and module management.
+  - Ex: - `sys.exit()`: For **Exiting** the program.
+        - `sys.path()`: It returns a list of directories where Python looks for modules when importing them. Can be modified to include custom module directories using `sys.path.append()`.
+  
+   **Use the following `Import Statement` in your code:**
+    ```
+    import sys
+    ```
 <br>
 
 ### 2. Required Third-Party_Libaries:
