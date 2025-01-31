@@ -203,6 +203,14 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Custom_Tkinter Window Theme and Geometry:
+**In CustomTkinter, you can adjust the Theme using the `set_appearance_mode()` and `set_default_color_theme()` functions.**
 
+### 1. set_appearance_mode():
+- The `set_appearance_mode()` function in CustomTkinter is used to change the overall appearance of the UI, allowing you to switch between **Light**, **Dark**, or **System** Mode.
+- CustomTkinter supports the following appearance modes:
+   - **Light:** Default light theme.
+   - **Dark:** Sets a Dark theme.
+   - **System:** Matches System theme settings.
+ 
 
 ---
