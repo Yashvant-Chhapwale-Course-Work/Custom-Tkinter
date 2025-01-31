@@ -157,7 +157,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 2. Required Third-Party_Libaries:
 - **`customtkinter` Library:** <br>
   - An advanced version of Tkinter with modern UI elements and themes.
-  - Provides additional widgets and customization options
+  - Provides additional widgets and customization options.<br>
+  
   **Run the following Prompt to install Custom Tkinter:**
     ```
     pip install customtkinter
@@ -169,7 +170,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
     
 - **`google.generativeai` Library:** <br>
   - Google's **Generative AI SDK(Software_Development_Kit)** for interacting with AI models like **Gemini**. 
-  - Used for **Text_Generation**, **AI-Based tasks**, and **API_Interactions**.
+  - Used for **Text_Generation**, **AI-Based tasks**, and **API_Interactions**.<br>
+  
   **Run the following Prompt to install Custom Tkinter:**
     ```
     pip install google-generativeai
