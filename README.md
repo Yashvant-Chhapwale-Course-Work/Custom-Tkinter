@@ -39,7 +39,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 1.  **Creating a Python Virtual Environment**                                                                  | >> [` CHECK CONTENT `](#creating-a-python-virtual-environment)                                |
 | 2.  **Installing and Importing required Modules for the Application**                                          | >> [` CHECK CONTENT `](#installing-and-importing-required-modules)                            |
-| 3.  **Custom-Tkinter Window Theme(Light,Dark) and Geometry(Width x Height)**                                   | >> [` CHECK CONTENT `](#custom_tkinter-window-theme-and-geometry)                             |
+| 3.  **Custom-Tkinter Window Theme(Light,Dark)**                                                                | >> [` CHECK CONTENT `](#custom_tkinter-window-theme)                                          |
+| 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#ajust-custom_tkinter-window-dimensions)                               |
 </div>
 
 ---
@@ -202,7 +203,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   
 ---
 
-## Custom_Tkinter Window Theme and Geometry:
+## Custom_Tkinter Window Theme:
 **In CustomTkinter, you can adjust the Theme using the [`set_appearance_mode()`](#1-set-appearance-mode()) and [`set_default_color_theme()`](#2-set-default-color-theme())  functions.**
 
 ### 1. set_appearance_mode():
