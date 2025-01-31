@@ -102,12 +102,14 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Installing and Importing required Modules
-### 1. Ensure Python is Installed:
-- **For ` Windows ` Systems:** <br>
-     Ensure Python is installed by running the following **prompt**:
-     ```
-     python --version
-     ```
+### 1. Required Standard_Libaries:
+- **`os`(Operating System) Library:** <br>
+  - Provides functions to interact with the operating system.
+  - Used for file handling, environment variables, and system commands.
+ Use the following `Import Statement` in your code:
+ ```
+ import os
+ ```
 - **For ` Linux / MacOS ` Systems:** <br>
      Ensure Python is installed by running the following **prompt**:
      ```
@@ -115,12 +117,13 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
      ```
 <br>
 
-### 2. Create a Virtual Environment:
-- **For ` Windows ` Systems:** <br>
-     Create a `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     python -m venv myenv
-     ```
+### 2. Required Third-Party_Libaries:
+- **`os`(Operating System) Library:** <br>
+  - Provides functions to interact with the operating system.
+  - Used for file handling, environment variables, and system commands.
+ ```
+ import os
+ ```
 - **For ` Linux / MacOS ` Systems:** <br>
      Create a `Virtual Environment` in Python by running the following **prompt**:
      ```
