@@ -128,7 +128,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   - Python's built-in GUI toolkit for creating graphical user interfaces.
   - Ex:
       - `tkinter.filedialog`: A module in Tkinter for opening and saving files via `File_Dialog_Windows`.<br>
-       <img src="https://github.com/user-attachments/assets/abfeacd9-e276-4cea-8dcd-358d1cc6d51d" width=200 height=200>
+       <img src="https://github.com/user-attachments/assets/abfeacd9-e276-4cea-8dcd-358d1cc6d51d" width=200 height=250><br>
       - `sys.path()`: 
   
    **Use the following `Import Statement` in your code:**
