@@ -115,8 +115,9 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - **`sys`(System) Library:** <br>
   - Provides system-specific functions and parameters.
   - Used for command-line arguments, interpreter interaction, and module management.
-  - Ex: - `sys.exit()`: For **Exiting** the program.
-        - `sys.path()`: It returns a list of directories where Python looks for modules when importing them. Can be modified to include custom module directories using `sys.path.append()`.
+  - Ex:
+      - `sys.exit()`: For **Exiting** the program.
+      - `sys.path()`: It returns a list of directories where Python looks for modules when importing them. Can dynamically add a directory to Python's Module_Search_Paths using `sys.path.append()`.
   
    **Use the following `Import Statement` in your code:**
     ```
