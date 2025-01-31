@@ -201,7 +201,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 </div>
 
 ### Note:
-- Don't Forget to [`Activate`](#3-activate-the-virtual-environment) your **Python_Virtual_Environment**.
+- Don't Forget to [`Activate`](#3-activate-the-virtual-environment) your **Python_Virtual_Environment** before package installations.
 - ⚠️ Without a Virtual Environment, Python packages are installed globally, which can lead to **"conflicts"** between different Projects that require different versions of the same package.
   
 ---
