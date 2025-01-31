@@ -165,15 +165,28 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
     import customtkinter as ctk
     ```
     
-- **`customtkinter` Library:** <br>
-  - An advanced version of Tkinter with modern UI elements and themes.
-  - Provides additional widgets and customization options
+- **`google.generativeai` Library:** <br>
+  - Google's **Generative AI SDK(Software_Development_Kit)** for interacting with AI models like **Gemini**. 
+  - Used for **Text_Generation**, **AI-Based tasks**, and **API_Interactions**.
   **Run the following Prompt to install Custom Tkinter:**
     ```
-    pip install customtkinter
+    pip install google-generativeai
     ```
    **Use the following `Import Statement` in your code:**
     ```
-    import customtkinter as ctk
+    import google.generativeai as genai
     ```
+    
+- **`pyinstaller` Library:** <br>
+  - It is used to convert Python_Scripts into standalone **Executables** (**.exe** for Windows, **.app** for macOS, etc).
+  - It bundles all dependencies into a single package so that users can run the application without installing Python.
+  **Run the following Prompt to install Custom Tkinter:**
+    ```
+    pip install pyinstaller
+    ```
+    
+- **Alternatively, Run this single command to install all required Libraries:**
+  ```
+  pip install customtkinter google-generativeai pyinstaller
+  ```
 <br>
