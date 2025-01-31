@@ -190,3 +190,9 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   pip install customtkinter google-generativeai pyinstaller
   ```
 <br>
+
+<div align="center">
+   ________________________________________________________
+</div>
+
+---
