@@ -39,6 +39,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 1.  **Creating a Python Virtual Environment**                                                                  | >> [` CHECK CONTENT `](#creating-a-python-virtual-environment)                                |
 | 2.  **Installing and Importing required Modules for the Application**                                          | >> [` CHECK CONTENT `](#installing-and-importing-required-modules)                            |
+| 3.  **Custom-Tkinter Window Theme(Light,Dark) and Geometry(Width x Height)**                                   | >> [` CHECK CONTENT `](#custom_tkinter-window-theme-and-geometry)                             |
 </div>
 
 ---
@@ -198,4 +199,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### Note:
 - Don't Forget to [`Activate`](#3-activate-the-virtual-environment) your **Python_Virtual_Environment**.
 - ⚠️ Without a Virtual Environment, Python packages are installed globally, which can lead to **"conflicts"** between different Projects that require different versions of the same package.
+  
+---
+
+## Custom_Tkinter Window Theme and Geometry:
+
+
 ---
