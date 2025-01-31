@@ -153,15 +153,27 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 2. Required Third-Party_Libaries:
-- **`os`(Operating System) Library:** <br>
-  - Provides functions to interact with the operating system.
- Used for file handling, environment variables, and system commands.
- ```
- import os
- ```
-- **For ` Linux / MacOS ` Systems:** <br>
-     Create a `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     python3 -m venv myenv
-     ```
+- **`customtkinter` Library:** <br>
+  - An advanced version of Tkinter with modern UI elements and themes.
+  - Provides additional widgets and customization options
+  **Run the following Prompt to install Custom Tkinter:**
+    ```
+    pip install customtkinter
+    ```
+   **Use the following `Import Statement` in your code:**
+    ```
+    import customtkinter as ctk
+    ```
+    
+- **`customtkinter` Library:** <br>
+  - An advanced version of Tkinter with modern UI elements and themes.
+  - Provides additional widgets and customization options
+  **Run the following Prompt to install Custom Tkinter:**
+    ```
+    pip install customtkinter
+    ```
+   **Use the following `Import Statement` in your code:**
+    ```
+    import customtkinter as ctk
+    ```
 <br>
