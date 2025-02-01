@@ -218,7 +218,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - **CODE:**
   ```
   ctk.set_appearance_mode("Dark") # Sets the appearance_mode to "Dark"
-                                     # Other Options: "Light" (Default), "Dark", "System"
+                                  # Other Options: "Light" (Default), "Dark", "System"
   ```
 <br>
 
