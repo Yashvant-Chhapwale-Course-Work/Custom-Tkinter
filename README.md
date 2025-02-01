@@ -368,6 +368,14 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   }
   }
   ```
+  **`Note`:** The **RAW Color_Theme File** follows the format:<br>
+  ```
+  {
+  "Widget_Name":{
+  "Widget_Attribute":["color_theme_for_lightMode","color_theme_for_darkMode"],
+  }
+  }
+  ```
 - **`Step 2`:** Pass this **RAW** file in the `set_default_color_theme()` function: <br>
   ```
   ctk.set_default_color_theme("./custom_purple.json")
