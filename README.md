@@ -234,6 +234,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
                                       # Other Options: "blue" (Default), "dark-blue", "green"
                                    
   ```
+<br>
 
 ### 3. Setting a Custom_Color_Theme:
 - **Custom_Tkinter** allows us to create our own **Custom_Color_Theme** by defining a `JSON` file with custom color themes.
