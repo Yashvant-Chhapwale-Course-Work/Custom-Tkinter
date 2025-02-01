@@ -368,7 +368,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   }
   }
   ```
-  **`Note`:** The **RAW Color_Theme File** follows the format:<br>
+  **`📝Note`:** The **RAW Color_Theme File** follows the format:<br>
   ```
   {
   "Widget_Name":{
