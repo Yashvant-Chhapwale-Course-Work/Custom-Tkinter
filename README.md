@@ -238,7 +238,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ### 3. Setting a Custom_Color_Theme:
 - **Custom_Tkinter** allows us to create our own **Custom_Color_Theme** by defining a `JSON` file with custom color themes.
-- **`Step 1`:** Create a **".JSON"** file (`custom_purple.json`) and define the **Custom_Color_Theme** in the following format: <br>
+- **`Step 1`:** Create a **".JSON"** file (`midnightOcean.json`) and define the **Custom_Color_Theme** in the following format: <br>
   ```
   {
   "CTk": {
@@ -381,10 +381,13 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
 - **`Step 2`:** Pass this **RAW** file in the `set_default_color_theme()` function: <br>
   ```
-  ctk.set_default_color_theme("./custom_purple.json")
+  ctk.set_default_color_theme("./midnightOcean.json")
 
   root = ctk.CTk()
   root.mainloop()
   ```
+- Click [Here]() to **Download** the custom theme file.
+
+
 
 ---
