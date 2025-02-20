@@ -40,7 +40,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 1.  **Creating a Python Virtual Environment**                                                                  | >> [` CHECK CONTENT `](#creating-a-python-virtual-environment)                                |
 | 2.  **Installing and Importing required Modules for the Application**                                          | >> [` CHECK CONTENT `](#installing-and-importing-required-modules)                            |
 | 3.  **Custom-Tkinter Window Themes**                                                                           | >> [` CHECK CONTENT `](#custom_tkinter-window-themes)                                         |
-| 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#ajust-custom_tkinter-window-dimensions)                               |
+| 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
 </div>
 
 ---
@@ -389,3 +389,33 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 -  📌 Click [Here](https://github.com/Yashvant-Chhapwale-Course-Work/Custom-Tkinter/releases/tag/theme_1.0) to **Download** the    `Custom Theme` File.
 
 ---
+
+## Adjusting Custom_Tkinter_Window Dimensions:
+**In CustomTkinter, you can adjust the Theme using the [`set_appearance_mode()`](#1-set_appearance_mode) and [`set_default_color_theme()`](#2-set_default_color_theme)  functions.**
+
+### 1. set_appearance_mode():
+- The `set_appearance_mode()` function in CustomTkinter is used to change the overall appearance of the UI, allowing you to switch between **Light**, **Dark**, or **System** Mode.
+- CustomTkinter supports the following Appearance_Modes:
+   - **Light:** Default light theme.
+   - **Dark:** Sets a Dark theme.
+   - **System:** Matches System theme settings.
+- **CODE:**
+  ```
+  ctk.set_appearance_mode("Dark") # Sets the appearance_mode to "Dark"
+                                  # Other Options: "Light" (Default), "Dark", "System"
+  ```
+<br>
+
+### 2. set_default_color_theme():
+- The `set_default_color_theme()` function in CustomTkinter is used to set the Color_Theme for widgets such as **Buttons**, **Progress_Bars**, and **Sliders**.
+- CustomTkinter supports the following Color_Themes:
+   - **blue:** Applies a Blue Color_Theme.
+   - **dark-blue:** Applies a Darker_Blue Color_Theme.
+   - **green:** Applies a Green Color_Theme.   
+- **CODE:**
+  ```
+  ctk.set_default_color_theme("blue") # Sets the color_theme to "blue"
+                                      # Other Options: "blue" (Default), "dark-blue", "green"
+                                   
+  ```
+<br>
