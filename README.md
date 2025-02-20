@@ -386,6 +386,6 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   root = ctk.CTk()
   root.mainloop()
   ```
--  📌 Click [Here](https://github.com/Yashvant-Chhapwale-Course-Work/Custom-Tkinter/releases/tag/theme_1.0) to **Download** the custom theme file.
+-  📌 Click [Here](https://github.com/Yashvant-Chhapwale-Course-Work/Custom-Tkinter/releases/tag/theme_1.0) to **Download** the    `Custom Theme` File.
 
 ---
