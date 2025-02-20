@@ -391,31 +391,41 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Adjusting Custom_Tkinter_Window Dimensions:
-**In CustomTkinter, you can adjust the Initial Resolution of the Window using the [`geometry()`](#1-geometry) function and Minimum Resize Dimensions for the Window using the [`minsize()`](#2-minsize) function.**
+**In CustomTkinter, you can adjust the Initial Resolution of the Window using the [`geometry()`](#1-geometry) function, Minimum Resize Dimensions for the Window using the [`minsize()`](#2-minsize) function and Maximum Resize Dimensions for the Window using the [`maxsize()`](#3-maxsize) function.**
 
 ### 1. geometry():
-- The `set_appearance_mode()` function in CustomTkinter is used to change the overall appearance of the UI, allowing you to switch between **Light**, **Dark**, or **System** Mode.
-- CustomTkinter supports the following Appearance_Modes:
-   - **Light:** Default light theme.
-   - **Dark:** Sets a Dark theme.
-   - **System:** Matches System theme settings.
+- The `geometry()` function in CustomTkinter sets the initial **Size** and **Position** of the Application Window.
 - **CODE:**
   ```
-  ctk.set_appearance_mode("Dark") # Sets the appearance_mode to "Dark"
-                                  # Other Options: "Light" (Default), "Dark", "System"
+  # Syntax:
+  # root.geometry("<width> x <height> + <x_offset> + <y_offset>")
+
+  root.geometry("600x350+750+100")
   ```
 <br>
 
 ### 2. minsize():
-- The `set_default_color_theme()` function in CustomTkinter is used to set the Color_Theme for widgets such as **Buttons**, **Progress_Bars**, and **Sliders**.
-- CustomTkinter supports the following Color_Themes:
-   - **blue:** Applies a Blue Color_Theme.
-   - **dark-blue:** Applies a Darker_Blue Color_Theme.
-   - **green:** Applies a Green Color_Theme.   
+- The `minsize()` function sets the **Minimum Resizable Width and Height** of the window, preventing the user from resizing it below the given dimensions.
 - **CODE:**
   ```
-  ctk.set_default_color_theme("blue") # Sets the color_theme to "blue"
-                                      # Other Options: "blue" (Default), "dark-blue", "green"
-                                   
+  # Syntax:
+  # root.minsize(<width>, <height>)
+
+  root.minsize(350, 200)                      
   ```
 <br>
+
+### 3. maxsize():
+- The `maxsize()` function sets the **Maximum Resizable Width and Height** of the window, preventing the user from resizing it beyond the given dimensions.
+- **CODE:**
+  ```
+  # Syntax:
+  # root.maxsize(<width>, <height>)
+
+  root.maxsize(1000, 450)                      
+  ```
+<br>
+
+---
+
+
