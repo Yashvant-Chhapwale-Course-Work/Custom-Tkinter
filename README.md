@@ -143,7 +143,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
     ```
     **OR**
      ```
-    from tkinter import filedialog, messagebox. font, ttk
+    from tkinter import filedialog, messagebox, font, ttk
     ```
 
 - **`threading` Library:** <br>
