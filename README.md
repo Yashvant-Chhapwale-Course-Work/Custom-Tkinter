@@ -441,15 +441,20 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
 <br>
 
-### 2. minsize():
-- The `minsize()` function sets the **Minimum Resizable Width and Height** of the window, preventing the user from resizing it below the given dimensions.
+### 2. mainloop():
+- In CustomTkinter, `mainloop()` is a method that starts the event loop of the application. It keeps the GUI running and listens for user interactions like button clicks, text input, and window resizing.
+- In other words, When `mainloop()` is called, the application enters an **infinite loop that waits for events**.
 - **CODE:**
   ```
-  # Syntax:
-  # root.minsize(<width>, <height>)
-
-  root.minsize(350, 200)                      
+  import customtkinter as ctk
+  
+  app = ctk.CTk()
+  app.mainloop() #Starts the Event Loop                   
   ```
+
+### 3. Creating an Application Window Using a Custom Class:
+- 
+
 <br>
 
 ---
