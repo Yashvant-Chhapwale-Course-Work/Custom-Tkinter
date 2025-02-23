@@ -431,16 +431,13 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Creating Custom_Tkinter_Window_Instance CTk():
-**In CustomTkinter, you can adjust the Initial Resolution of the Window using the [`geometry()`](#1-geometry) function, Minimum Resize Dimensions for the Window using the [`minsize()`](#2-minsize) function and Maximum Resize Dimensions for the Window using the [`maxsize()`](#3-maxsize) function.**
-
-### 1. geometry():
-- The `geometry()` function in CustomTkinter sets the initial **Size** and **Position** of the Application Window.
+### 1. CTk():
+- In `CustomTkinter`, the `CTk()` class is used to create the **Main_Application Window**, similar to `Tk()` in Standard `Tkinter`.
 - **CODE:**
   ```
-  # Syntax:
-  # root.geometry("<width> x <height> + <x_offset> + <y_offset>")
-
-  root.geometry("600x350+750+100")
+  import customtkinter as ctk
+  
+  app = ctk.CTk()
   ```
 <br>
 
