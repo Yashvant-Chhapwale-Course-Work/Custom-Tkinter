@@ -504,7 +504,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - IN
 
 
-### 2. Setting a Window_Icon dynamically at Runtime:
+### 2. Setting a Window_Icon dynamically at Runtime using wm_iconbitmap():
 - In `CustomTkinter`, the `CTk()` class is used to create the **Main_Application Window**, similar to `Tk()` in Standard `Tkinter`.
 - **CODE:**
   ```
