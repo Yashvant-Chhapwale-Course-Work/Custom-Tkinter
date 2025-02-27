@@ -42,7 +42,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 3.  **Custom-Tkinter Window Themes**                                                                           | >> [` CHECK CONTENT `](#custom_tkinter-window-themes)                                         |
 | 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
 | 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
-| 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#set-window-icon)                                                      |
+| 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#setting-window-icon)                                                  |
 
 
 </div>
@@ -492,3 +492,14 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
   
 ---
+
+## Setting Window Icon:
+### 1. CTk():
+- In `CustomTkinter`, the `CTk()` class is used to create the **Main_Application Window**, similar to `Tk()` in Standard `Tkinter`.
+- **CODE:**
+  ```
+  import customtkinter as ctk
+  
+  app = ctk.CTk()
+  ```
+<br>
