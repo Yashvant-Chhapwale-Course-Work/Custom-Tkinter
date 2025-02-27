@@ -489,6 +489,12 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   #4. Run the Event_Loop and Start the Application
   app.mainloop()
   ```
+  - **`Note:`**
+    - `__init()__` is a special method (also known as a constructor) that is automatically called when a new Object of a class is created. It typically contains:
+       - **`Parameters`** to accept input values.
+       - **`Default Attribute Values`** for the Object Instance of the Class (`self.attribute = value`).
+       - **`Optional Logic`** like validation or function calls.
+    - `super().__init__()` is used in Python when a class inherits from a parent class. It helps our Application_Class to inherit features from Custom_Tkinter (CTk()) Parent Class Constructor. 
 <br>
   
 ---
