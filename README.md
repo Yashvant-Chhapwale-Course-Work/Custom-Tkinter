@@ -41,7 +41,9 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 2.  **Installing and Importing required Modules for the Application**                                          | >> [` CHECK CONTENT `](#installing-and-importing-required-modules)                            |
 | 3.  **Custom-Tkinter Window Themes**                                                                           | >> [` CHECK CONTENT `](#custom_tkinter-window-themes)                                         |
 | 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
-| 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                        | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
+| 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
+| 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#set-window-icon)                                                      |
+
 
 </div>
 
