@@ -453,7 +453,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
 
 ### 3. Creating an Application Window Using a Custom Class:
-- When using **Object-Oriented Programming (OOP)** in Tkinter, you define a **Class** for your application and create an **Instance** of that class to run the program.
+- When using **Object-Oriented Programming (OOP)** in **Custom_Tkinter**, you define a **Class** for your application and create an **Instance** of that class to run the program.
 - Using a class makes the application `Modular` and `Scalable`.
 - Steps to Create an **Application Instance**:
   - Define a **Class** that inherits from `tk.Tk` (for the Main_Application_Window).
