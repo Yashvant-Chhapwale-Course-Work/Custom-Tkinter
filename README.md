@@ -453,8 +453,40 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
 
 ### 3. Creating an Application Window Using a Custom Class:
-- 
+- When using **Object-Oriented Programming (OOP)** in Tkinter, you define a **Class** for your application and create an **Instance** of that class to run the program.
+- Using a class makes the application `Modular` and `Scalable`.
+- Steps to Create an **Application Instance**:
+ - Define a **Class** that inherits from `tk.Tk` (for the Main_Application_Window).
+ - Initialize the class using `__init__()`.
+ - Create an **Instance** of the Class.
+ - Run the **Event_Loop** using `.mainloop()`.
+- **CODE:**
+  ```
+  import customtkinter as ctk
 
+   # Customize theme for the Custom-Tkinter App
+   ctk.set_appearance_mode("Dark")
+   ctk.set_default_color_theme("./midnightOcean.json")
+
+   #1. Define a Class for the Application
+   class Main(ctk.CTk):
+       #2. Initialize the Class
+       def __init__(self):
+           super().__init__() 
+
+           # Set "Application_Title"
+           self.title("Scribe")
+
+           # Display-Window_Settings
+           self.geometry("600x350")
+           self.minsize(350,200)
+
+  #3. Create an Instance of the Class
+  app = Main()
+
+  #4. Run the Event_Loop and Start the Application
+  app.mainloop()
+  ```
 <br>
-
+  
 ---
