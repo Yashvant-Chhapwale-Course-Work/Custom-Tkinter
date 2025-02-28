@@ -620,7 +620,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
-## Creating Custom_Tkinter Buttonss and Segmented_Buttons:
+## Creating Custom_Tkinter Buttons and Segmented_Buttons:
 ### 1. CTkButton():
 - The `CTkLabel()` is a widget in **CustomTkinter** that allows you to display text with a Window or Frame.
 -**CODE:**
