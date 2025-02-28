@@ -667,7 +667,3 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
-
-
----
-
