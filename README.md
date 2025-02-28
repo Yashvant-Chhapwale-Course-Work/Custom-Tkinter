@@ -625,7 +625,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. CTkButton():
 - The `CTkButton()` is used for creating a **modern**, **customizable** button in **CustomTkinter**, designed to match the theme and appearance settings of the library.
 - We can also define a `Function` to be executed when the button is **Clicked** using the `command` Attribute.
--**CODE:**
+- **CODE:**
   ```
    import customtkinter as ctk
    app=ctk.CTk()
@@ -645,7 +645,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - The `CTkSegmentedButton()` in **CustomTkinter** is a button that consists of **Multiple Selectable Segments**.
 - It allows users to switch between different options, making it ideal for mode **selection**, **filtering**, or **toggling between views**.
 - You can also use the `values` Attribute in `CTkSegmentedButton` to define the different **selectable options** available in the button.
--**CODE:**
+- **CODE:**
   ```
    import customtkinter as ctk
    app=ctk.CTk()
