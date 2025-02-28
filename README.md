@@ -44,8 +44,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
 | 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#setting-window-icon)                                                  |
 | 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
-| 8.  **Custom-Tkinter Labels**                                                                                  | >> [` CHECK CONTENT `](#creating-custom_tkinter-labels)                                       |
-
+| 8.  **Displaying Text and Images using Custom-Tkinter Labels **                                                | >> [` CHECK CONTENT `](#creating-custom_tkinter-labels-for-displaying-text-and-images)        |
 
 </div>
 
@@ -570,16 +569,49 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
-## Creating Custom_Tkinter Labels:
+## Creating Custom_Tkinter Labels for displaying Text and Images:
 ### 1. CTkLabel():
-- The `CTkFrame()` method is used to create a **Simple Container** for grouping widgets together.
-- **CODE:**
+- The `CTkLabel()` is a widget in **CustomTkinter** that allows you to display text with a Window or Frame.
+-**CODE:**
   ```
    import customtkinter as ctk
    app=ctk.CTk()
 
-   # Create a container/Frame and assign it to the "frame" variable
-   frame = ctk.CTkFrame(app, width=300, height=200)
+   # Create a Label and assign it to the "label" variable
+   label = ctk.CTkLabel(app, text="Hello!")
+  
+   app.mainloop()
+  ``` 
+
+### 2. CTkImage():
+- The `CTkImage()` is a **CustomTkinter** class that allows you to use images in light and dark mode dynamically. It is primarily used with widgets like `CTkLabel()`, `CTkButton()`(rarely),etc.
+- **`CTkImage()` Attributes**:
+  - `light_image`: This is the image that will be displayed when the application is in **Light_Mode**.
+  - `dark image`: This is the image that will be displayed when the application is in **Dark_Mode**.
+  - `size`(Optional): Defines the dimensions of the image in the format `(width,height)`.
+- Also, we need to import `Pillow (PIL)` because **CustomTkinter's CTkImage** requires images to be in the `PIL Image_Format` rather than direct file_paths.<br>
+  Run the following **Command** in Terminal to install `Pillow`:
+  ```
+  pip install pillow
+  ```
+  After installing `Pillow` ,  import the `Image` module from the Pillow library, allowing you to open, manipulate, and save images in Python.
+  ```
+  from PIL import Image
+  ```
+- **CODE:**
+  ```
+   import customtkinter as ctk
+  
+   #Import PIL for Image_Handling
+   from PIL import Image 
+  
+   app=ctk.CTk()
+
+   # Create a CTkImage Object
+   my_image = ctk.CTkImage(light_image=Image.open("images/lightImage.png"), dark_image=Image.open("images/darkImage.png"), size=(50, 50))
+  
+   # Create a Label to display the image and assign it to the "label" variable
+   label = ctk.CTkLabel(app, image=my_image, text="")
   
    app.mainloop()
   ```
