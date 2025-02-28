@@ -45,6 +45,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#setting-window-icon)                                                  |
 | 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
 | 8.  **Displaying Text and Images using Custom-Tkinter Labels**                                                 | >> [` CHECK CONTENT `](#creating-custom_tkinter-labels-for-displaying-text-and-images)        |
+| 9.  **Custom-Tkinter Buttons and Segmented-Buttons**                                                           | >> [` CHECK CONTENT `](#creating-custom_tkinter-buttons-and-segmented_buttons)                |
 
 </div>
 
@@ -619,8 +620,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
-## Creating Custom_Tkinter Labels for displaying Text and Images:
-### 1. CTkLabel():
+## Creating Custom_Tkinter Buttonss and Segmented_Buttons:
+### 1. CTkButton():
 - The `CTkLabel()` is a widget in **CustomTkinter** that allows you to display text with a Window or Frame.
 -**CODE:**
   ```
