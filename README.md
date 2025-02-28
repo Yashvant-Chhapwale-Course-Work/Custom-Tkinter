@@ -43,7 +43,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
 | 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
 | 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#setting-window-icon)                                                  |
-| 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-frames-and-scrollable_frames)                                |
+| 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
 
 </div>
 
@@ -533,6 +533,37 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   -  `__file__`: It is a special attribute in **Python** that represents the `Path of the Current Script(.py)` which is being executed. 
   -  `os.path.join(base_path, "images", "logo.ico")`: This code is used to build the correct file path to the `.ico` file. It appends `/images/logo.ico` to either `sys._MEIPASS` or the obtained parent directory from `os.path.dirname(os.path.abspath(__file__))` depending upon the type of environment and execution.
   -  `wm_iconbitmap()`: This is a method of the **Window_Manager (wm)**, which is why it is prefixed with `wm_`. It is an alias for `iconbitmap()` and works the same way i.e, it is same as [**`iconbitmap()`**](#1-iconbitmap) function.
+<br>
+
+---
+
+## Creating Custom_Tkinter Frames and Scrollabe_Frames:
+### 1. CTkFrame():
+- The `CTkFrame()` method is used to create a **Simple Container** for grouping widgets together.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app=ctk.CTk()
+
+   # Create a container/Frame and assign it to the "frame" variable
+   frame = ctk.CTkFrame(app, width=300, height=200)
+  
+   app.mainloop()
+  ```
+<br>
+
+### 2. CTkScrollableFrame():
+- The `CTkScrollableFrame()` is similar to **CTkFrame()** but, it allows **Scrolling** when the content exceeds the available space.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app=ctk.CTk()
+
+   # Create a container/Frame and assign it to the "frame" variable
+   scrollableFrame = ctk.CTkScrollableFrame(app, width=300, height=200)
+  
+   app.mainloop()
+  ```
 <br>
 
 ---
