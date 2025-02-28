@@ -530,10 +530,9 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   -  Above code ensures that the **Icon** is correctly applied in both development `.py` and packaged `.exe` execution.
   -  `sys._MEIPASS`: It is used by **PyInstaller** to extract files for **Executables** i.e, `.exe` .
   -  `os.path.dirname(os.path.abspath(__file__))`: This code is used to access the parent folder/directory of the Python Script `.py` being developed.
+  -  `__file__`: It is a special attribute in **Python** that represents the `Path of the Current Script(.py)` which is being executed. 
   -  `os.path.join(base_path, "images", "logo.ico")`: This code is used to build the correct file path to the `.ico` file. It appends `/images/logo.ico` to either `sys._MEIPASS` or the obtained parent directory from `os.path.dirname(os.path.abspath(__file__))` depending upon the type of environment and execution.
-  -  `wm_iconbitmap()`: This is a method of the **Window_Manager (wm)**, which is why it is prefixed with `wm_`. It is an alias for `iconbitmap()` and works the same way i.e it is same as [**`iconbitmap()`**](#-1-iconbitmap) function.
-
-
+  -  `wm_iconbitmap()`: This is a method of the **Window_Manager (wm)**, which is why it is prefixed with `wm_`. It is an alias for `iconbitmap()` and works the same way i.e, it is same as [**`iconbitmap()`**](#1-iconbitmap) function.
 <br>
 
 ---
