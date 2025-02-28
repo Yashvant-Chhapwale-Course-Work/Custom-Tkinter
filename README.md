@@ -511,21 +511,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    app.mainloop()
   ```
 <br>
-  
-### 2. photoImage():
-- You can set a custom Icon for a Costom_Tkinter Window using the `photoImage()` method for `.png` files.
-- **CODE:**
-  ```
-   app = ctk.CTk()
-   icon = tk.PhotoImage(file="icon.png")
-   app.iconphoto(True, icon)
 
-   app.mainloop()
-  ```
-<br>
-
-### 3. Setting a Window_Icon dynamically at Runtime using wm_iconbitmap():
-- In `CustomTkinter`, the `CTk()` class is used to create the **Main_Application Window**, similar to `Tk()` in Standard `Tkinter`.
+### 2. Setting a Window_Icon dynamically at Runtime using wm_iconbitmap():
+- To dynamically set a Window_Icon at runtime in **CustomTkinter**, we use `wm_iconbitmap()`, which allows specifying an `.ico` file for the Application_Window.
+- This method ensures compatibility across different execution environments, including standalone executables `.exe` files created with `PyInstaller` as well as Python Scripts `.py`.
 - **CODE:**
   ```
    if getattr(sys, 'frozen', False):
