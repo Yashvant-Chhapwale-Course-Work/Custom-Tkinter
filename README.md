@@ -631,7 +631,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    app=ctk.CTk()
 
    # Create a Button and assign it to the "button" variable
-   button = ctk.CTkButton(app, text="Click Me", command=on_click")
+   button = ctk.CTkButton(app, text="Click Me", command=onClick)
 
    # Define a Function "onClick" that is executed whenever the "button" is clicked
    def onClick():
@@ -651,7 +651,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    app=ctk.CTk()
 
    # Create a Segmented_Button and assign it to the "segmentedButton" variable
-   segmentedButton = ctk.CTkSegmentedButton(app, values=["Rock", "Paper", "Scissors"], command=onClick")
+   segmentedButton = ctk.CTkSegmentedButton(app, values=["Rock", "Paper", "Scissors"], command=onClick)
 
    # Define a Function "onClick" that is executed whenever the "button" is clicked
    def onClick(value):
