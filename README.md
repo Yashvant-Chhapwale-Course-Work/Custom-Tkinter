@@ -561,7 +561,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    import customtkinter as ctk
    app=ctk.CTk()
 
-   # Create a container/Frame and assign it to the "frame" variable
+   # Create a Scrollable_Frame and assign it to the "scrollableFrame" variable
    scrollableFrame = ctk.CTkScrollableFrame(app, width=300, height=200)
   
    app.mainloop()
@@ -582,7 +582,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    label = ctk.CTkLabel(app, text="Hello!")
   
    app.mainloop()
-  ``` 
+  ```
+<br>
 
 ### 2. CTkImage():
 - The `CTkImage()` is a **CustomTkinter** class that allows you to use images in light and dark mode dynamically. It is primarily used with widgets like `CTkLabel()`, `CTkButton()`(rarely),etc.
@@ -622,14 +623,42 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ## Creating Custom_Tkinter Buttons and Segmented_Buttons:
 ### 1. CTkButton():
-- The `CTkLabel()` is a widget in **CustomTkinter** that allows you to display text with a Window or Frame.
+- The `CTkButton()` is used for creating a **modern**, **customizable** button in **CustomTkinter**, designed to match the theme and appearance settings of the library.
+- We can also define a `Function` to be executed when the button is **Clicked** using the `command` Attribute.
 -**CODE:**
   ```
    import customtkinter as ctk
    app=ctk.CTk()
 
-   # Create a Label and assign it to the "label" variable
-   label = ctk.CTkLabel(app, text="Hello!")
+   # Create a Button and assign it to the "button" variable
+   button = ctk.CTkButton(app, text="Click Me", command=on_click")
+
+   # Define a Function "onClick" that is executed whenever the "button" is clicked
+   def onClick(self):
+      print("Hello User!");
+  
+   app.mainloop()
+  ```
+<br>
+
+### 2. CTkSegmentedButton():
+- The `CTkSegmentedButton()` is used for creating a **modern**, **customizable** button in **CustomTkinter**, designed to match the theme and appearance settings of the library.
+- We can also define a `Function` to be executed when the button is **Clicked** using the `command` Attribute.
+-**CODE:**
+  ```
+   import customtkinter as ctk
+   app=ctk.CTk()
+
+   # Create a Button and assign it to the "button" variable
+   button = ctk.CTkButton(app, text="Click Me", command=on_click")
+
+   # Define a Function "onClick" that is executed whenever the "button" is clicked
+   def onClick(self):
+      print("Hello User!");
   
    app.mainloop()
   ``` 
+<br>
+
+---
+
