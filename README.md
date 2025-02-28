@@ -573,7 +573,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ## Creating Custom_Tkinter Labels for displaying Text and Images:
 ### 1. CTkLabel():
 - The `CTkLabel()` is a widget in **CustomTkinter** that allows you to display text with a Window or Frame.
--**CODE:**
+- **CODE:**
   ```
    import customtkinter as ctk
    app=ctk.CTk()
