@@ -44,6 +44,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
 | 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#setting-window-icon)                                                  |
 | 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
+| 8.  **Custom-Tkinter Labels**                                                                                  | >> [` CHECK CONTENT `](#creating-custom_tkinter-labels)                                       |
+
 
 </div>
 
@@ -567,3 +569,18 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ---
+
+## Creating Custom_Tkinter Labels:
+### 1. CTkLabel():
+- The `CTkFrame()` method is used to create a **Simple Container** for grouping widgets together.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app=ctk.CTk()
+
+   # Create a container/Frame and assign it to the "frame" variable
+   frame = ctk.CTkFrame(app, width=300, height=200)
+  
+   app.mainloop()
+  ```
+<br>
