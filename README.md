@@ -46,6 +46,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
 | 8.  **Displaying Text and Images using Custom-Tkinter Labels**                                                 | >> [` CHECK CONTENT `](#creating-custom_tkinter-labels-for-displaying-text-and-images)        |
 | 9.  **Custom-Tkinter Buttons and Segmented-Buttons**                                                           | >> [` CHECK CONTENT `](#creating-custom_tkinter-buttons-and-segmented_buttons)                |
+| 10. **Custom-Tkinter Check_Box and Combo_Box**                                                                 | >> [` CHECK CONTENT `](#creating-custom_tkinter-check_box-and-combo_box)                      |
 
 </div>
 
@@ -667,3 +668,24 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
+### Creating Custom_Tkinter Check_Box and Combo_Box:
+### 1. CTkButton():
+- The `CTkButton()` is used for creating a **modern**, **customizable** button in **CustomTkinter**, designed to match the theme and appearance settings of the library.
+- We can also define a `Function` to be executed when the button is **Clicked** using the `command` Attribute.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app=ctk.CTk()
+
+   # Define a Function "onClick" that is executed whenever the "button" is clicked
+   def onClick():
+      print("Hello User!");
+  
+   # Create a Button and assign it to the "button" variable
+   button = ctk.CTkButton(app, text="Click Me", command=onClick)
+
+   app.mainloop()
+  ```
+<br>
+
+---
