@@ -668,24 +668,42 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
-### Creating Custom_Tkinter Check_Box and Combo_Box:
-### 1. CTkButton():
-- The `CTkButton()` is used for creating a **modern**, **customizable** button in **CustomTkinter**, designed to match the theme and appearance settings of the library.
-- We can also define a `Function` to be executed when the button is **Clicked** using the `command` Attribute.
+## Creating Custom_Tkinter Check_Box and Combo_Box:
+### 1. CTkCheckBox():
+- A `CTkCheckBox()` is a customizable checkbox widget in **CustomTkinter** that allows users to toggle between **Checked** and **Unchecked** states.
+- It can be used to let users select multiple options in a **form**, **survey**, or **settings** panel.
 - **CODE:**
   ```
    import customtkinter as ctk
-   app=ctk.CTk()
+   app = ctk.CTk()
 
-   # Define a Function "onClick" that is executed whenever the "button" is clicked
-   def onClick():
-      print("Hello User!");
-  
-   # Create a Button and assign it to the "button" variable
-   button = ctk.CTkButton(app, text="Click Me", command=onClick)
+   # Create a Function "onCheck" which performs operations depending upon the "checkbox's State"
+   def onCheck():
+      print(f"Checkbox State: {checkbox.get()}")  # 1 if checked, 0 if unchecked
+
+   # Create a CheckBox
+   checkbox = ctk.CTkCheckBox(app, text="Accept Terms", command=onCheck)
 
    app.mainloop()
   ```
 <br>
 
+### 2. CTkComboBox():
+- A `CTkCheckBox()` is a customizable checkbox widget in **CustomTkinter** that allows users to toggle between **Checked** and **Unchecked** states.
+- It can be used to let users select multiple options in a **form**, **survey**, or **settings** panel.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app = ctk.CTk()
+
+   # Create a Function "onCheck" which performs operations depending upon the "checkbox's State"
+   def onCheck():
+      print(f"Checkbox State: {checkbox.get()}")  # 1 if checked, 0 if unchecked
+
+   # Create a CheckBox
+   checkbox = ctk.CTkCheckBox(app, text="Accept Terms", command=onCheck)
+
+   app.mainloop()
+  ```
+<br>
 ---
