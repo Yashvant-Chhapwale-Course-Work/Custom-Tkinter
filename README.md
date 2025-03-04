@@ -689,21 +689,28 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 2. CTkComboBox():
-- A `CTkCheckBox()` is a customizable checkbox widget in **CustomTkinter** that allows users to toggle between **Checked** and **Unchecked** states.
-- It can be used to let users select multiple options in a **form**, **survey**, or **settings** panel.
+- A `CTkComboBox()` is a **Dropdown_Menu** that allows users to select one option from multiple choices.
+- The `values` attribute is used for displaying multiple choices in **Combo_Box**.
 - **CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
 
-   # Create a Function "onCheck" which performs operations depending upon the "checkbox's State"
-   def onCheck():
-      print(f"Checkbox State: {checkbox.get()}")  # 1 if checked, 0 if unchecked
+   # Define a Function "onClick" that is executed whenever a "Choice" is selected in the "ComboBox"
+   def onClick(choice):
+      print(f"You chose {choice}")
 
-   # Create a CheckBox
-   checkbox = ctk.CTkCheckBox(app, text="Accept Terms", command=onCheck)
+   # Create a ComboBox
+   combo = ctk.CTkComboBox(
+      app, 
+      values=["Rock", "Paper", "Scissors"], 
+      command=onClick
+   )
 
    app.mainloop()
   ```
 <br>
+
 ---
+
+
