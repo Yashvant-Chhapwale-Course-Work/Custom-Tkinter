@@ -718,7 +718,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. CTkSwitch():
 - A `CTkSwitch()` is a widget in **CustomTkinter** that provides a **Modern Toggle_Switch**.
 - It allows users to switch between `ON` and `OFF` states.
-- - **CODE:**
+- **CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
