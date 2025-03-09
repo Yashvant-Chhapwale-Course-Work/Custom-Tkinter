@@ -731,7 +731,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
       switch_var = ctk.StringVar(value="on")  # Default to "on" or "off"
 
    # Create a CTkSwitch
-      switch = ctk.CTkSwitch(root, text="Enable Feature", command=switch_event, variable=switch_var, onvalue="on", offvalue="off")
+      switch = ctk.CTkSwitch(root, text="Enable Feature",
+                             command=switch_event,
+                             variable=switch_var,
+                             onvalue="on", offvalue="off")
   
    app.mainloop()
   ```
