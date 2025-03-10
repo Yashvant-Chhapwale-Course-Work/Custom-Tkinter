@@ -718,22 +718,26 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. CTkSwitch():
 - A `CTkSwitch()` is a widget in **CustomTkinter** that provides a **Modern Toggle_Switch**.
 - It allows users to switch between `ON` and `OFF` states.
+- Core Attributes:
+  - `command`: Calls a function when toggled.
+  - `variable`: A temporary container which stores the **Switch_State**.
+  - `onvalue` / `offvalue`: Defines **Values** for **ON** and **OFF** states.
 - **CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
   
    # Function to print the switch state
-   def switch_event():
+   def toggleSwitch():
       print("Switch is:", switch_var.get())
 
    # Create a switch variable
-      switch_var = ctk.StringVar(value="on")  # Default to "on" or "off"
+      switchState = ctk.StringVar(value="on")  # Default to "on" or "off" Switch_State
 
    # Create a CTkSwitch
       switch = ctk.CTkSwitch(root, text="Enable Feature",
-                             command=switch_event,
-                             variable=switch_var,
+                             command=toggleSwitch,
+                             variable=switchState,
                              onvalue="on", offvalue="off")
   
    app.mainloop()
