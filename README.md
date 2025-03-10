@@ -731,7 +731,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    def toggleSwitch():
       print("Switch is:", switch_var.get())
 
-   # Create a Switch_Variable
+   # Create a "Switch_Variable"
       switchState = ctk.StringVar(value="on")  # Default to "on" or "off" Switch_State
 
    # Create a "CTkSwitch()" Instance
