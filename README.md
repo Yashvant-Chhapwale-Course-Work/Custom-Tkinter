@@ -727,15 +727,15 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    import customtkinter as ctk
    app = ctk.CTk()
   
-   # Function to print the switch state
+   # Define the "Function" to be executed when the "Switch_State" is "Toggled"
    def toggleSwitch():
       print("Switch is:", switch_var.get())
 
-   # Create a switch variable
+   # Create a Switch_Variable
       switchState = ctk.StringVar(value="on")  # Default to "on" or "off" Switch_State
 
-   # Create a CTkSwitch
-      switch = ctk.CTkSwitch(root, text="Enable Feature",
+   # Create a "CTkSwitch()" Instance
+      switch = ctk.CTkSwitch(root, text="Switch",
                              command=toggleSwitch,
                              variable=switchState,
                              onvalue="on", offvalue="off")
@@ -745,7 +745,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 2. CTkSlider():
-- A `CTkSlider()` is a **Dropdown_Menu** that allows users to select one option from multiple choices.
+- A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range.
 - The `values` attribute is used for displaying multiple choices in **Combo_Box**.
 - **CODE:**
   ```
