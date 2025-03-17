@@ -735,7 +735,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
       switchState = ctk.StringVar(value="on")  # Default to "on" or "off" Switch_State
 
    # Create a "CTkSwitch()" Instance
-      switch = ctk.CTkSwitch(root, text="Switch",
+      switch = ctk.CTkSwitch(app, text="Switch",
                              command=toggleSwitch,
                              variable=switchState,
                              onvalue="on", offvalue="off")
@@ -745,8 +745,11 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 2. CTkSlider():
-- A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range.
-- 
+- A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range. 
+- Core Attributes:
+  - `command`: Calls a function for "Slider_Event".
+  - `from_`: Defines the **Minimum_Value** for the Slider.
+  - `to`: Defines the **Maximum_Value** for the Slider.
 - You can also set the Slider to a **Default_Value** using the `slider.set(value)` function. Replace the `value` with an `Integer`.
 - **CODE:**
   ```
@@ -755,10 +758,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
    # Define a Function "onSlide" that is executed eith a "Slider_Event"
    def onSlide(value):
-      print(f"User Counts: {value}")
+      print(f"User Counts: {int(value)}")
 
    # Create a "CTkSlider()" instance
-   slider = ctk.CTkSlider(root, from_=0, to=100, command=onSlide)
+   slider = ctk.CTkSlider(app, from_=0, to=100, command=onSlide)
 
    # Set "Default_Value" for the Slider
    slider.set(50)  
