@@ -48,6 +48,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 9.  **Custom-Tkinter Buttons and Segmented-Buttons**                                                           | >> [` CHECK CONTENT `](#creating-custom_tkinter-buttons-and-segmented_buttons)                |
 | 10. **Custom-Tkinter Check_Box and Combo_Box**                                                                 | >> [` CHECK CONTENT `](#creating-custom_tkinter-check_box-and-combo_box)                      |
 | 11. **Custom-Tkinter Switch and Slider**                                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter-switch-and-slider)                            |
+| 12. **Custom-Tkinter Entry and Text_Box**                                                                      | >> [` CHECK CONTENT `](#creating-custom_tkinter-entry-and-text_box)                           |
 
 </div>
 
@@ -745,7 +746,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 2. CTkSlider():
-- A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range. 
+- The `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range. 
 - Core Attributes:
   - `command`: Calls a function for "Slider_Event".
   - `from_`: Defines the **Minimum_Value** for the Slider.
@@ -772,3 +773,60 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ---
 
+## Creating Custom_Tkinter Entry and Text_Box:
+### 1. CTkEntry():
+- The `CTkEntry()` is a widget in **CustomTkinter** that provides a **Modern Toggle_Switch**.
+- It allows users to switch between `ON` and `OFF` states.
+- Core Attributes:
+  - `command`: Calls a function when toggled.
+  - `variable`: A temporary container which stores the **Switch_State**.
+  - `onvalue` / `offvalue`: Defines **Values** for **ON** and **OFF** states.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app = ctk.CTk()
+  
+   # Define the "Function" to be executed when the "Switch_State" is "Toggled"
+   def toggleSwitch():
+      print("Switch is:", switch_var.get())
+
+   # Create a "Switch_Variable"
+      switchState = ctk.StringVar(value="on")  # Default to "on" or "off" Switch_State
+
+   # Create a "CTkSwitch()" Instance
+      switch = ctk.CTkSwitch(app, text="Switch",
+                             command=toggleSwitch,
+                             variable=switchState,
+                             onvalue="on", offvalue="off")
+  
+   app.mainloop()
+  ```
+<br>
+
+### 2. CTkSlider():
+- A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range. 
+- Core Attributes:
+  - `command`: Calls a function for "Slider_Event".
+  - `from_`: Defines the **Minimum_Value** for the Slider.
+  - `to`: Defines the **Maximum_Value** for the Slider.
+- You can also set the Slider to a **Default_Value** using the `slider.set(value)` function. Replace the `value` with an `Integer`.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app = ctk.CTk()
+
+   # Define a Function "onSlide" that is executed eith a "Slider_Event"
+   def onSlide(value):
+      print(f"User Counts: {int(value)}")
+
+   # Create a "CTkSlider()" instance
+   slider = ctk.CTkSlider(app, from_=0, to=100, command=onSlide)
+
+   # Set "Default_Value" for the Slider
+   slider.set(50)  
+  
+   app.mainloop()
+  ```
+<br>
+
+---
