@@ -746,23 +746,23 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ### 2. CTkSlider():
 - A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range.
-- The `values` attribute is used for displaying multiple choices in **Combo_Box**.
+- 
+- You can also set the Slider to a **Default_Value** using the `slider.set(value)` function. Replace the `value` with an `Integer`.
 - **CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
 
-   # Define a Function "onClick" that is executed whenever a "Choice" is selected in the "ComboBox"
-   def onClick(choice):
-      print(f"You chose {choice}")
+   # Define a Function "onSlide" that is executed eith a "Slider_Event"
+   def onSlide(value):
+      print(f"User Counts: {value}")
 
-   # Create a ComboBox
-   combo = ctk.CTkComboBox(
-      app, 
-      values=["Rock", "Paper", "Scissors"], 
-      command=onClick
-   )
+   # Create a "CTkSlider()" instance
+   slider = ctk.CTkSlider(root, from_=0, to=100, command=onSlide)
 
+   # Set "Default_Value" for the Slider
+   slider.set(50)  
+  
    app.mainloop()
   ```
 <br>
