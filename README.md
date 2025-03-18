@@ -777,6 +777,20 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. CTkEntry():
 - The `CTkEntry()` is a `Single-Line Text Input` Widget that allows users to enter a `Short String`, such as a **name**, **email**, or **password**.
 - You can also include a **Placeholder** using the `placeholder_text` attribute.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app = ctk.CTk()
+  
+   # Define a Function "get_input()" to get the input data from the "CTkEntry()" Widget
+   def get_input():
+      print("Hello: ", entry.get())
+
+   # Create a "CTkEntry()" instance
+   entry = ctk.CTkEntry(app, placeholder_text="Enter your name")
+  
+   app.mainloop()
+  ```
 - **Important **Methods** for manipulating Inputs:**
   - **`.get()`:** Retrieves the `Current Input_Text` from the Widget.<br>
   ```
@@ -797,24 +811,24 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   # Clear all Text
   entry.delete(0, "end")  
   ```
-- **CODE:**
-  ```
-   import customtkinter as ctk
-   app = ctk.CTk()
-  
-   # Define a Function "get_input()" to get the input data from the "CTkEntry()" Widget
-   def get_input():
-      print("Hello: ", entry.get())
-
-   # Create a "CTkEntry()" instance
-   entry = ctk.CTkEntry(app, placeholder_text="Enter your name")
-  
-   app.mainloop()
-  ```
 <br>
 
 ### 2. CTkTextbox():
 - A `CTkSlider()` is a `Multi-Line Text Input` Widget used for `Longer String` input, such as **comments**, **messages**, or **notes**.
+- **CODE:**
+  ```
+   import customtkinter as ctk
+   app = ctk.CTk()
+
+   # Define a Function "get_text()" to get text input from the "CTkTextbox()" Widget
+   def get_text():
+      print("User:", textbox.get("1.0", "end"))  # ".get("1.0", "end")" is used to get all the Text from "row 1, column 01" (i.e, "1.0") to the "end" 
+
+   # Create a "CTkTextbox()" instance
+   textbox = ctk.CTkTextbox(app, width=300, height=100)
+  
+   app.mainloop()
+  ```
 - **Important **Methods** for manipulating Input Text:**
   - **`.get("1.0","end")`:** Retrieves the `Current Input_Text` from the Widget.<br>
   ```
@@ -834,20 +848,6 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
   # Clear all Text
   textbox.delete("1.0", "end")
-  ```
-- **CODE:**
-  ```
-   import customtkinter as ctk
-   app = ctk.CTk()
-
-   # Define a Function "get_text()" to get text input from the "CTkTextbox()" Widget
-   def get_text():
-      print("User:", textbox.get("1.0", "end"))  # ".get("1.0", "end")" is used to get all the Text from "row 1, column 01" (i.e, "1.0") to the "end" 
-
-   # Create a "CTkTextbox()" instance
-   textbox = ctk.CTkTextbox(app, width=300, height=100)
-  
-   app.mainloop()
   ```
 <br>
 
