@@ -777,6 +777,14 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. CTkEntry():
 - The `CTkEntry()` is a `Single-Line Text Input` Widget that allows users to enter a `Short String`, such as a **name**, **email**, or **password**.
 - You can also include a **Placeholder** using the `placeholder_text` attribute.
+- Important **Methods** for manipulating Inputs:
+  - **`.get()`:** Retrieves the `Current Input_Text` from the Widget.
+  ```
+  # Retrieves the Current_Text from the entry
+  entry_text = entry.get()
+  ```
+  - **`.insert(index,text)`:** Inserts text at a Specific_Index.
+  - **`.delete(start,end)`:** Deletes text from the given Index_Range.
 - **CODE:**
   ```
    import customtkinter as ctk
