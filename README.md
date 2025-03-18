@@ -775,55 +775,37 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ## Creating Custom_Tkinter Entry and Text_Box:
 ### 1. CTkEntry():
-- The `CTkEntry()` is a widget in **CustomTkinter** that provides a **Modern Toggle_Switch**.
-- It allows users to switch between `ON` and `OFF` states.
-- Core Attributes:
-  - `command`: Calls a function when toggled.
-  - `variable`: A temporary container which stores the **Switch_State**.
-  - `onvalue` / `offvalue`: Defines **Values** for **ON** and **OFF** states.
+- The `CTkEntry()` is a `Single-Line Text Input` Widget that allows users to enter a `Short String`, such as a **name**, **email**, or **password**.
+- You can also include a **Placeholder** using the `placeholder_text` attribute.
 - **CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
   
-   # Define the "Function" to be executed when the "Switch_State" is "Toggled"
-   def toggleSwitch():
-      print("Switch is:", switch_var.get())
+   # Define a Function "get_input()" to get the input data from the "CTkEntry()" Widget
+   def get_input():
+      print("Hello: ", entry.get())
 
-   # Create a "Switch_Variable"
-      switchState = ctk.StringVar(value="on")  # Default to "on" or "off" Switch_State
-
-   # Create a "CTkSwitch()" Instance
-      switch = ctk.CTkSwitch(app, text="Switch",
-                             command=toggleSwitch,
-                             variable=switchState,
-                             onvalue="on", offvalue="off")
+   # Create a "CTkEntry()" instance
+   entry = ctk.CTkEntry(app, placeholder_text="Enter your name")
   
    app.mainloop()
   ```
 <br>
 
-### 2. CTkSlider():
-- A `CTkSlider()` is a modern, customizable **Slider_Widget** that allows users to select a value from a specified range. 
-- Core Attributes:
-  - `command`: Calls a function for "Slider_Event".
-  - `from_`: Defines the **Minimum_Value** for the Slider.
-  - `to`: Defines the **Maximum_Value** for the Slider.
-- You can also set the Slider to a **Default_Value** using the `slider.set(value)` function. Replace the `value` with an `Integer`.
+### 2. CTkTextbox():
+- A `CTkSlider()` is a `Multi-Line Text Input` Widget used for `Longer String` input, such as **comments**, **messages**, or **notes**.
 - **CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
 
-   # Define a Function "onSlide" that is executed eith a "Slider_Event"
-   def onSlide(value):
-      print(f"User Counts: {int(value)}")
+   # Define a Function "get_text()" to get text input from the "CTkTextbox()" Widget
+   def get_text():
+      print("User:", textbox.get("1.0", "end"))  # ".get("1.0", "end")" is used to get all the Text from "row 1, column 01" (i.e, "1.0") to the "end" 
 
-   # Create a "CTkSlider()" instance
-   slider = ctk.CTkSlider(app, from_=0, to=100, command=onSlide)
-
-   # Set "Default_Value" for the Slider
-   slider.set(50)  
+   # Create a "CTkTextbox()" instance
+   textbox = ctk.CTkTextbox(app, width=300, height=100)
   
    app.mainloop()
   ```
