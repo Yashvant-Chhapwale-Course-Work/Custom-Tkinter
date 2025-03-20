@@ -50,6 +50,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 11. **Custom-Tkinter Switch and Slider**                                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter-switch-and-slider)                            |
 | 12. **Custom-Tkinter Entry and Text_Box**                                                                      | >> [` CHECK CONTENT `](#creating-custom_tkinter-entry-and-text_box)                           |
 | 13. **Custom-Tkinter Widget Attributes_List**                                                                  | >> [` CHECK CONTENT `](#listing-custom_tkinter-widget-attributes)                             |
+| 14. **Manipulating Widget Attributes at Runtime using `.configure()`**                                         | >> [` CHECK CONTENT `](#manipulating-attributes-using-configure-method)                       |
 
 </div>
 
@@ -872,6 +873,12 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 12. *pady*                   | Adds `Padding` along `Y-axis`                              | ``` button = ctk.CTkButton(app, pady = 10) ```                                                    |
 | 13. *anchor*                 | `Aligns` the **Widget's Content to `w (Left or West)`, `e (Right or East)`, `n (Top or North)`, `s (Bottom or South)`, `nw (Top-Left or NorthWest)`, `ne (Top-Right or NorthEast)`, `sw (Bottom-Left or SouthWest)`, `se (Bottom-Right or SouthEast)`**                          | ``` button = ctk.CTkButton(app, anchor = "w") ```                                                 |
 | 14. *command*                | `Assigns a Function` to be executed by the Widget          | ``` button = ctk.CTkButton(app, command = onClick) ```                                            |
+<br>
+
+---
+
+## Manipulating Attributes using configure() Method:
+
 <br>
 
 ---
