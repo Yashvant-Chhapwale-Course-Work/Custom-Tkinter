@@ -51,6 +51,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 12. **Custom-Tkinter Entry and Text_Box**                                                                      | >> [` CHECK CONTENT `](#creating-custom_tkinter-entry-and-text_box)                           |
 | 13. **Custom-Tkinter Widget Attributes_List**                                                                  | >> [` CHECK CONTENT `](#listing-custom_tkinter-widget-attributes)                             |
 | 14. **Manipulating Widget Attributes at Runtime using `.configure()`**                                         | >> [` CHECK CONTENT `](#manipulating-attributes-using-configure-method)                       |
+| 15. **Widget Layout Methods (`Pack`, `Place` and `Grid`)**                                                     | >> [` CHECK CONTENT `](#widget-layout-methods-pack-place-and-grid)                            |
 
 </div>
 
@@ -878,7 +879,24 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Manipulating Attributes using configure() Method:
+### configure():
+- The `configure()` method allows you to dynamically change Widget's Attributes after the widget is created.
+- **Syntax:**
+  ```
+  <widget_name>.configure(<attribute> = <value>)
+  ```
+- **Example:**
+  ```
+  button = ctk.CTkButton(app, text="")
+  button.pack(pady=10)
+  
+  button.configure(text="Click Me")
+  ```
+<br>
 
+---
+
+## Widget Layout Methods (Pack, Place and Grid):
 <br>
 
 ---
