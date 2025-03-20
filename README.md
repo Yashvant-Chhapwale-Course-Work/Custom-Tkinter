@@ -856,22 +856,22 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ## Listing Custom_Tkinter Widget Attributes:
 
-| Attribute                                                                 | Description                         | Example                                                                                           |
-|---------------------------------------------------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------|
-| 1.  **text**                                                              |                                     | ``` [` CHECK CONTENT `](#creating-a-python-virtual-environment) ```                               |
-| 2.  **width**                                                             |                                     | ``` [` CHECK CONTENT `](#installing-and-importing-required-modules) ```                           |
-| 3.  **height**                                                            |                                     | ``` [` CHECK CONTENT `](#custom_tkinter-window-themes) ```                                        |
-| 4.  **fg_color**                                                          |                                     | ``` [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions) ```                          |
-| 5.  **bg_color**                                                          |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk) ```                         |
-| 6.  **text_color**                                                        |                                     | ``` [` CHECK CONTENT `](#setting-window-icon) ```                                                 |
-| 7.  **hover_color**                                                       |                                     | ``` [` CHECK CONTENT `](#setting-window-icon) ```                                                 |
-| 8.  **corner_radius**                                                     |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames) ```                |
-| 9.  **border_width**                                                      |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter-labels-for-displaying-text-and-images) ```       |
-| 10.  **font**                                                             |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter-buttons-and-segmented_buttons) ```               |
-| 11. **padx**                                                              |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter-check_box-and-combo_box) ```                     |
-| 12. **pady**                                                              |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter-switch-and-slider) ```                           |
-| 13. **anchor**                                                            |                                     | ``` [` CHECK CONTENT `](#creating-custom_tkinter-entry-and-text_box) ```                          |
-| 14. **command**                                                           |                                     | ``` [` CHECK CONTENT `](#listing-custom_tkinter-widget-attributes) ```                            |
+| Attribute                      | Description                                                | Example                                                                                           |
+|--------------------------------|------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| 1.  **text**                   | Sets the `Text` to be displayed for the Widgets            | ``` button = ctk.CTkButton(app, text = "Click Me") ```                                            |
+| 2.  **width**                  | Sets the Widget's `Width` in **pixels**                    | ``` button = ctk.CTkButton(app, width = 300) ```                                                  |
+| 3.  **height**                 | Sets the Widget's `Height` in **pixels**                   | ``` button = ctk.CTkButton(app, width = 300, height = 150) ```                                    |
+| 4.  **fg_color**               | Sets the `Foreground_Color`                                | ``` button = ctk.CTkButton(app, fg_color = "#fca311") ```                                         |
+| 5.  **bg_color**               | Sets the `Background_Color`                                | ``` button = ctk.CTkButton(app, bg_color = "transparent") ```                                     |
+| 6.  **text_color**             | Sets the `Text_Color`                                      | ``` button = ctk.CTkButton(app, text_color = "#14213D") ```                                       |
+| 7.  **hover_color**            | Changes the Widget’s color when the user `hovers` over it  | ``` button = ctk.CTkButton(app, hover_color = "#fdb619") ```                                      |
+| 8.  **corner_radius**          | Sets the Widget's `Border_Curvature`                       | ``` button = ctk.CTkButton(app, corner_radius = 5) ```                                            |
+| 9.  **border_width**           | Sets `Border_Thickness`                                    | ``` button = ctk.CTkButton(app, border_width = 2) ```                                             |
+| 10.  **font**                  | Sets `Font_Family`, `Font_Size` and `Font_Style`           | ``` button = ctk.CTkButton(app, text = "Click Me", font = ("Arial", 12, "normal")) ```            |
+| 11. **padx**                   | Adds `Padding` along `X-axis`                              | ``` button = ctk.CTkButton(app, padx = 5) ```                                                     |
+| 12. **pady**                   | Adds `Padding` along `Y-axis`                              | ``` button = ctk.CTkButton(app, pady = 10) ```                                                    |
+| 13. **anchor**                 | `Aligns` the **Widget's Content to `w (Left or West)`, `e (Right or East)`, `n (Top or North)`, `s (Bottom or South)`, `nw (Top-Left or NorthWest)`, `ne (Top-Right or NorthEast)`, `sw (Bottom-Left or SouthWest)`, `se (Bottom-Right or SouthEast)`**                          | ``` button = ctk.CTkButton(app, anchor = "w") ```                                                 |
+| 14. **command**                | `Assigns a Function` to be executed by the Widget          | ``` button = ctk.CTkButton(app, command = onClick) ```                                            |
 <br>
 
 ---
