@@ -536,6 +536,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
 - **Explanation:**
   -  Above code ensures that the **Icon** is correctly applied in both development `.py` and packaged `.exe` execution.
+  -  `getattr(sys, 'frozen', False)`: It checks whether the Python script is running as a `frozen (compiled)` executable.
+      - The `sys.frozen` only exists when the script is compiled into an executable (e.g., with PyInstaller). 
+      - If `sys.frozen` exists → Returns `True`.
+      - If `sys.frozen` does not exist → Returns `False (default value)`.
   -  `sys._MEIPASS`: It is used by **PyInstaller** to extract files for **Executables** i.e, `.exe` .
   -  `os.path.dirname(os.path.abspath(__file__))`: This code is used to access the parent folder/directory of the Python Script `.py` being developed.
   -  `__file__`: It is a special attribute in **Python** that represents the `Path of the Current Script(.py)` which is being executed. 
