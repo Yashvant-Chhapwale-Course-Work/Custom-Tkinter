@@ -944,6 +944,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
    app.mainloop()
   ```
+<br>
 
 ### 2. place(): 
 - It is used to **precisely position** widgets using `X` and `Y` **Coordinates**.
@@ -989,6 +990,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
    app.mainloop()   
   ```
+<br>
 
 ### 3. grid(): 
 - It is used to **precisely position** widgets using `X` and `Y` **Coordinates**.
