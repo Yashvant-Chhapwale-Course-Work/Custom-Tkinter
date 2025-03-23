@@ -907,6 +907,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    - [`pack()`](#1-pack)
    - [`place()`](#2-place)
    - [`grid()`](#3-grid)
+<br>
 
 ### 1. pack(): 
 - It stacks widgets **Vertically** or **Horizontally**.
