@@ -905,8 +905,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - Widgets are **not visible** unless placed inside the window using the `Layout` Methods.
 - **Some `Layout` Methods are:**
   1. [`pack()`](#1-pack)
-  2. [`place()`]()
-  3. [`grid()`]()
+  2. [`place()`](#2-place)
+  3. [`grid()`](#3-grid)
 
 ### 1. pack(): 
 - It stacks widgets **Vertically** or **Horizontally**.
