@@ -908,7 +908,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - Core Attributes:
    -  `side`: It controls the `Widget_Placement_Direction` i.e, the direction in which the widgets are to be stacked. (`"top"`, `"bottom"`, `"left"`, `"right"`)
    -  `fill`: Expands a widget to cover the screen in the given direction. (`"x"`, `"y"`, `"both"`, `None`)
-   -  `expand`: Makes widget fill the extra space. (`True` or `False`)
+   -  `expand`: Makes widget fill the extra space on resizing. (`True` or `False`)
    -  `padx` and `pady`: Adds `Padding (Spacing)` around the widget.
    -  `ipadx` and `ipady`: Adds `Internal Padding` to the widget. Can be used for increasing the Widget's Size.
    -  `anchor`: Positions the Widget. (`n`,`s`,`e`,`w`,etc.)
@@ -925,7 +925,14 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    button = ctk.CTkButton(app, text="Click Me", command=onClick)
 
    # Pack the "CTkButton" instance using the "pack()" function 
-   button.pack(expand=True, padx=20, pady=20, ipadx=10, ipady=5)
+   button.pack(
+      side="top",       # Position button at the top
+      anchor="center",  # Align button to the center
+      expand=True,      # Allow resizing
+      fill="none",      # Keep original size
+      padx=20, pady=20, # External spacing
+      ipadx=10, ipady=5 # Internal spacing
+   )
 
    app.mainloop()
   ```
