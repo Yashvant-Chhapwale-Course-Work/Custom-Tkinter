@@ -904,12 +904,31 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 1. pack(): 
 - It stacks widgets **Vertically** or **Horizontally**.
 - By default it arranges widgets in `Top-to-Bottom` order.
+- It is generally used to arrange widgets `horizontally` or `vertically` inside a parent widget (Ex: `CTkFrame`).
 - Core Attributes:
-   -  `side`:
-   -  `fill`:
-   -  `expand`:
-   -  `padx` and `pady`:
-- 
+   -  `side`: It controls the `Widget_Placement_Direction` i.e, the direction in which the widgets are to be stacked. (`"top"`, `"bottom"`, `"left"`, `"right"`)
+   -  `fill`: Expands a widget to cover the screen in the given direction. (`"x"`, `"y"`, `"both"`, `None`)
+   -  `expand`: Makes widget fill the extra space. (`True` or `False`)
+   -  `padx` and `pady`: Adds `Padding (Spacing)` around the widget.
+   -  `ipadx` and `ipady`: Adds `Internal Padding` to the widget. Can be used for increasing the Widget's Size.
+   -  `anchor`: Positions the Widget. (`n`,`s`,`e`,`w`,etc.)
+- - **SAMPLE CODE:**
+  ```
+   import customtkinter as ctk
+   app=ctk.CTk()
+
+   # Define a Function "onClick" that is executed whenever the "button" is clicked
+   def onClick():
+      print("Hello User!");
+  
+   # Create a "CTkButton" and assign it to the "button" variable
+   button = ctk.CTkButton(app, text="Click Me", command=onClick)
+
+   # Pack the "CTkButton" instance using the "pack()" function 
+   button.pack(expand=True, padx=20, pady=20, ipadx=10, ipady=5)
+
+   app.mainloop()
+  ```
 
 <br>
 
