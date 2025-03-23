@@ -911,7 +911,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    -  `expand`: Makes widget fill the extra space on resizing. (`True` or `False`)
    -  `padx` and `pady`: Adds `Padding (Spacing)` around the widget.
    -  `ipadx` and `ipady`: Adds `Internal Padding` to the widget. Can be used for increasing the Widget's Size.
-   -  `anchor`: Positions the Widget. (`n`,`s`,`e`,`w`,etc.)
+   -  `anchor`: Positions the Widget. (`center`,`n`,`s`,`e`,`w`,etc.)
 - - **SAMPLE CODE:**
   ```
    import customtkinter as ctk
