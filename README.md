@@ -920,7 +920,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    -  `padx` and `pady`: Adds `Padding (Spacing)` around the widget.
    -  `ipadx` and `ipady`: Adds `Internal Padding` to the widget. Can be used for increasing the Widget's Size.
    -  `anchor`: Positions the Widget. (`center`,`n`,`s`,`e`,`w`,etc.)
-- - **SAMPLE CODE:**
+- **SAMPLE CODE:**
   ```
    import customtkinter as ctk
    app=ctk.CTk()
@@ -965,7 +965,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    -  `relwidth`: Defines Widget's Width as a `Fraction of the Parent’s Width`. (`0.0`(0%) to `1.0`(100%))
    -  `relheight`: Defines Widget's Height as a `Fraction of the Parent’s Height`. (`0.0`(0%) to `1.0`(100%))
    -  `anchor`: Sets the `Reference Point` for positioning. (`center`,`n`,`s`,`e`,`w`,etc.)
-- - **SAMPLE CODE:**
+- **SAMPLE CODE:**
   ```
    import customtkinter as ctk
    app = ctk.CTk()
@@ -990,6 +990,50 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    app.mainloop()   
   ```
 
+### 3. grid(): 
+- It is used to **precisely position** widgets using `X` and `Y` **Coordinates**.
+- It is useful for `overlapping` widgets without causing errors during **User Interactions**.
+- it is ideal for `Absolute Positioning` of the Widgets.
+- Core Attributes:
+   -  `x`: Sets the `X-Coordinate` i.e, `Horizontal Positioning`.
+   -  `y`: Sets the `Y-Coordinate` i.e, `Vertical Positioning`.
+   -  `relx`: Defines the horizontal position `Relative to the Parent Widget’s Width`.
+      - `relx = 0.0` stands for **0% of Parent Widget's Width** i.e, `Left Edge`.
+      - `relx = 0.5` stands for **50% of Parent Widget's Width** i.e, `Horizontal Center`.
+      - `relx = 1.0` stands for **100% of Parent Widget's Width** i.e, `Right Edge`.
+   -  `rely`: Defines the vertical position `Relative to the Parent Widget’s Height`.
+      - `rely = 0.0` stands for **0% of Parent Widget's Height** i.e, `Top Edge`.
+      - `rely = 0.5` stands for **50% of Parent Widget's Height** i.e, `Vertical Center`.
+      - `rely = 1.0` stands for **100% of Parent Widget's Height** i.e, `Bottom Edge`. 
+   -  `width`: Sets the Widget's `Width`.
+   -  `height`: Sets the Widget's `Height`.
+   -  `relwidth`: Defines Widget's Width as a `Fraction of the Parent’s Width`. (`0.0`(0%) to `1.0`(100%))
+   -  `relheight`: Defines Widget's Height as a `Fraction of the Parent’s Height`. (`0.0`(0%) to `1.0`(100%))
+   -  `anchor`: Sets the `Reference Point` for positioning. (`center`,`n`,`s`,`e`,`w`,etc.)
+- **SAMPLE CODE:**
+  ```
+   import customtkinter as ctk
+   app = ctk.CTk()
+
+   # Define a Function "onClick" that is executed whenever the "button" is clicked
+   def onClick():
+      print("Hello User!");
+
+   # Create a "CTkButton" and assign it to the "button" variable
+   button = ctk.CTkButton(app, text="Click Me", command=onClick)
+
+   # Place the "CTkButton" instance using the "place()" function 
+   button.place(
+       # x=200, y=150,         # Absolute position (unnecessary as "relx" and "rely" are being used!)
+       relx=0.5, rely=0.5,     # Positions button at the absolute center of the Viewing Window
+       # width=100, height=50  # Fixed size (unnecessary as "relwidth" and "relheight" are being used!)
+       relwidth=0.2,           # Sets the relative width
+       relheight=0.1,          # Sets the relative height
+       anchor="center",        # Aligns the button to the "center"     
+   )
+
+   app.mainloop()   
+  ```
 <br>
 
 ---
