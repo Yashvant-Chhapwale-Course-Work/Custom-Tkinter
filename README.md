@@ -949,7 +949,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ### 2. place(): 
 - It is used to **precisely position** widgets using `X` and `Y` **Coordinates**.
 - It is useful for `overlapping` widgets without causing errors during **User Interactions**.
-- it is ideal for `Absolute Positioning` of the Widgets.
+- It is ideal for `Absolute Positioning` of the Widgets.
 - Core Attributes:
    -  `x`: Sets the `X-Coordinate` i.e, `Horizontal Positioning`.
    -  `y`: Sets the `Y-Coordinate` i.e, `Vertical Positioning`.
@@ -993,9 +993,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 3. grid(): 
-- It is used to **precisely position** widgets using `X` and `Y` **Coordinates**.
-- It is useful for `overlapping` widgets without causing errors during **User Interactions**.
-- it is ideal for `Absolute Positioning` of the Widgets.
+- This method is used for arranging widgets in a `Table-Like` structure (i.e, `Rows` & `Columns`).
+- It is ideal for `Form Layouts`, `Dashboards`, and `Structured UIs`.
 - Core Attributes:
    -  `x`: Sets the `X-Coordinate` i.e, `Horizontal Positioning`.
    -  `y`: Sets the `Y-Coordinate` i.e, `Vertical Positioning`.
