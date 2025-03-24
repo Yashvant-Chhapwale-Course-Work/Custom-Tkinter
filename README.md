@@ -996,21 +996,19 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 - This method is used for arranging widgets in a `Table-Like` structure (i.e, `Rows` & `Columns`).
 - It is ideal for `Form Layouts`, `Dashboards`, and `Structured UIs`.
 - Core Attributes:
-   -  `x`: Sets the `X-Coordinate` i.e, `Horizontal Positioning`.
-   -  `y`: Sets the `Y-Coordinate` i.e, `Vertical Positioning`.
-   -  `relx`: Defines the horizontal position `Relative to the Parent Widget’s Width`.
-      - `relx = 0.0` stands for **0% of Parent Widget's Width** i.e, `Left Edge`.
-      - `relx = 0.5` stands for **50% of Parent Widget's Width** i.e, `Horizontal Center`.
-      - `relx = 1.0` stands for **100% of Parent Widget's Width** i.e, `Right Edge`.
-   -  `rely`: Defines the vertical position `Relative to the Parent Widget’s Height`.
-      - `rely = 0.0` stands for **0% of Parent Widget's Height** i.e, `Top Edge`.
-      - `rely = 0.5` stands for **50% of Parent Widget's Height** i.e, `Vertical Center`.
-      - `rely = 1.0` stands for **100% of Parent Widget's Height** i.e, `Bottom Edge`. 
-   -  `width`: Sets the Widget's `Width`.
-   -  `height`: Sets the Widget's `Height`.
+   -  `row`: Specifies the `Row` Number. (**0-Based Indexing**)
+   -  `column`: Specifies the `Column` Number. (**0-Based Indexing**)
+   -  `rowspan`: **Expands** widget across `Multiple Rows`.
+   -  `columnspan`: **Expands** widget across `Multiple Columns`.
+   -  `padx` and `pady`: Adds `Padding (Spacing)` around the widget.
+   -  `ipadx` and `ipady`: Adds `Internal Padding` to the widget. Can be used for increasing the Widget's Size.
    -  `relwidth`: Defines Widget's Width as a `Fraction of the Parent’s Width`. (`0.0`(0%) to `1.0`(100%))
    -  `relheight`: Defines Widget's Height as a `Fraction of the Parent’s Height`. (`0.0`(0%) to `1.0`(100%))
-   -  `anchor`: Sets the `Reference Point` for positioning. (`center`,`n`,`s`,`e`,`w`,etc.)
+   -  `sticky`: It is used for `Aligning` the Widget within its `Grid Cell`. (`center`,`n`,`s`,`e`,`w`,etc.)
+- We can also use the `grid_rowconfigure()` and `grid_columnconfigure()` methods to control how **Rows and Columns Expand** inside another Widget or the Viewing Window.
+   - `grid_rowconfigure(index, weight = value)`: Controls `Row Expansion`.
+   - `grid_columnconfigure(index, weight = value)`: Controls `Column Expansion`.
+   - **`NOTE`:** Setting `weight=1` allows `Resizing`, making the **row / column flexible**.  
 - **SAMPLE CODE:**
   ```
    import customtkinter as ctk
@@ -1023,15 +1021,18 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
    # Create a "CTkButton" and assign it to the "button" variable
    button = ctk.CTkButton(app, text="Click Me", command=onClick)
 
-   # Place the "CTkButton" instance using the "place()" function 
-   button.place(
-       # x=200, y=150,         # Absolute position (unnecessary as "relx" and "rely" are being used!)
-       relx=0.5, rely=0.5,     # Positions button at the absolute center of the Viewing Window
-       # width=100, height=50  # Fixed size (unnecessary as "relwidth" and "relheight" are being used!)
-       relwidth=0.2,           # Sets the relative width
-       relheight=0.1,          # Sets the relative height
-       anchor="center",        # Aligns the button to the "center"     
+   # Place the "CTkButton" instance using the "grid()" function
+   button.grid(
+      row=0, column=0,          # Position the button in row_0, column_0
+      rowspan=1, columnspan=1,  # Span across 1 row and 1 column
+      sticky="nsew",            # Expand in all directions
+      padx=20, pady=20,         # External spacing
+      ipadx=10, ipady=5         # Internal spacing
    )
+
+   # Configure the Rows and Columns to allow Expansion
+   app.grid_rowconfigure(0, weight=1)
+   app.grid_columnconfigure(0, weight=1)
 
    app.mainloop()   
   ```
