@@ -50,9 +50,9 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 11. **Custom-Tkinter Switch and Slider**                                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter-switch-and-slider)                            |
 | 12. **Custom-Tkinter Entry and Text_Box**                                                                      | >> [` CHECK CONTENT `](#creating-custom_tkinter-entry-and-text_box)                           |
 | 13. **Custom-Tkinter Widget Attributes_List**                                                                  | >> [` CHECK CONTENT `](#listing-custom_tkinter-widget-attributes)                             |
-| 14. **Manipulating Widget Attributes at Runtime using `.configure()`**                                         | >> [` CHECK CONTENT `](#manipulating-attributes-using-configure-method)                       |
+| 14. **Manipulating Widget Attributes at Runtime using `.configure()`**                                         | >> [` CHECK CONTENT `](#manipulating-attributes-using-configure--method)                      |
 | 15. **Widget Layout Methods (`Pack`, `Place` and `Grid`)**                                                     | >> [` CHECK CONTENT `](#widget-layout-methods-pack-place-and-grid)                            |
-| 16. **Creating a Tabbed Interface using Tkinter's Notebook Widget**                                            | >> [` CHECK CONTENT `](#creating-a-tabbed-interface-using-ttknotebook)                        |
+| 16. **Creating a Tabbed Interface using Tkinter's Notebook Widget**                                            | >> [` CHECK CONTENT `](#creating-a-tabbed-interface-using-ttknotebook-)                       |
 
 </div>
 
