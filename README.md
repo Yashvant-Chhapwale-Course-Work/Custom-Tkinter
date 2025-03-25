@@ -1042,6 +1042,13 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Creating a Tabbed Interface using ttk.Notebook( ):
+- A `Tabbed Interface` allows users to switch between different sections of a GUI using `Tabs`, similar to a Web Browser.
+- In **Tkinter / Custom_Tkinter**, this can be achieved using `ttk.Notebook()` from the `tkinter.ttk` module.
+- First, we need to **import** `Notebook` from `tkinter.ttk` module:
+  ``` 
+  from tkinter.ttk import Notebook
+  ```
+- 
 <br>
 
 ---
