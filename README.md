@@ -1048,6 +1048,10 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ``` 
   from tkinter.ttk import Notebook
   ```
+- Then, we need to create a `Notebook (Tab Container)`:
+  ```
+  notebook = Notebook(app)
+  ```
 - 
 <br>
 
