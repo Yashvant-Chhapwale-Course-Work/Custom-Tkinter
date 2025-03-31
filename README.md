@@ -1067,7 +1067,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
   notebook.select(tab1)
   ```
-- `forget(<existing_notebook_child>")`: Hides an existing `Tab (Frame)` (Removes it from the display but doesn't destroy it).
+- `forget(<existing_notebook_child>")`: Completely removes an existing `Tab (Frame)` from the Notebook.
   ```
   notebook.forget(tab1)
   ```
@@ -1077,7 +1077,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   notebook.hide(tab1)
 
   # Display the Tab again
-  notebook.add(tab1, text="Home")
+  notebook.add(tab1)
   ```
 - `index(<existing_notebook_child>")`: Gets the `Numerical_Index` of a `Tab`.
   ```
