@@ -1075,7 +1075,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
   print(notebook.index(tab1)) # Output: 0 (if tab1 is the first tab)
   ```
-- `tab(<existing_notebook_child>, attribute = "Value")`: It is used to `Get` or `Set` properties of a specific `Tab`. It allows you to `Modify Tab Attributes` **dynamically**.
+- `tab(<existing_notebook_child>, attribute = "Value")`: It is used to `Get` or `Set` properties of a specific `Tab` **dynamically**.
   ```
   notebook.tab(tab1, text="New Home")
   ```
