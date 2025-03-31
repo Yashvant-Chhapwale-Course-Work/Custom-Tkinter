@@ -53,7 +53,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 14. **Manipulating Widget Attributes at Runtime using `.configure()`**                                         | >> [` CHECK CONTENT `](#manipulating-attributes-using-configure--method)                      |
 | 15. **Widget Layout Methods (`Pack`, `Place` and `Grid`)**                                                     | >> [` CHECK CONTENT `](#widget-layout-methods-pack-place-and-grid)                            |
 | 16. **Creating a Tabbed Interface using Tkinter's Notebook Widget**                                            | >> [` CHECK CONTENT `](#creating-a-tabbed-interface-using-ttknotebook-)                       |
-| 17. **Packaging a Python Script into an EXE using PyInstaller**                                                | >> [` CHECK CONTENT `](#packaging-a-python-script-into-a-standalone-exe-using-pyinstaller)    |
+| 17. **Styling Tkinter's Notebook Widget using Style() Function**                                               | >> [` CHECK CONTENT `](#styling-ttknotebook--using-ttkstyle--function)                           |
+| 18. **Packaging a Python Script into an EXE using PyInstaller**                                                | >> [` CHECK CONTENT `](#packaging-a-python-script-into-a-standalone-exe-using-pyinstaller)    |
 </div>
 
 ---
@@ -1109,6 +1110,12 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
   notebook.instate(["selected"], displayMessage)
   ```
+<br>
+
+---
+
+## Styling ttk.Notebook( ) using ttk.Style( ) Function:
+
 <br>
 
 ---
