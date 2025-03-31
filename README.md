@@ -1054,7 +1054,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
 - Finally, we need to **position** and **display** the notebook using `Layout Methods`:
   ```
-  notebook.pack(exppand=True, fill="both")
+  notebook.pack(expand=True, fill="both")
   ```
   <br>
   
