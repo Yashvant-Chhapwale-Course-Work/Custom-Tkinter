@@ -1121,6 +1121,26 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### PyInstaller Installation:
-- 
+- Paste the following prompt in your **Terminal** to install `PyInstaller`:
+  ```
+  pip install pyinstaller
+  ```
+
+### Packaging a Python Script:
+- Paste the following prompt in your **Terminal** to package a `Python Script` into `Standalone Executable (.exe)`:
+  ```
+  pyinstaller --onefile --noconsole --icon=<filepath> --add-data "<filepath>" <filename>.py
+  ```
+  **`Note:`** Replace `<filename>` with your `Python_Script's` Name which you want to be bundled and `<filepath>` with your `Application_Icon's` File Path.
+
+### PyInstaller Flags:
+
+|Sr. No. |PyInstaller Flag                                            |Description                                                                                       |
+|========|============================================================|==================================================================================================|
+|1       |`--onefile`                                                 |Create a single **executable (.exe)**.                                                            |
+|1       |`--noconsole`                                               |Hides **Console Window** (for GUI).                                                               |
+|1       |`--icon=<filepath>`                                         |Set **Custom Icon** for the executable.                                                           |
+|1       |`--add-data "<filepath>"`                                   |Adds **additional files and resources** to the bundled executable.                                |
+
 <br>
 ---
