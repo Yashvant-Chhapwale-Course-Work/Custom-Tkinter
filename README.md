@@ -1052,7 +1052,35 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
   notebook = Notebook(app)
   ```
-- 
+- Finally, we need to **position** and **display** the notebook using `Layout Methods`:
+  ```
+  notebook.pack(exppand=True, fill="both")
+  ```
+### Important Notebook Functions:
+- `add(<notebook_child>, text="Tab_name")`: Adds a new `Tab (Frame)` to the Notebook.
+  ```
+  notebook.add(tab1, text="Home")
+  ```
+- `select(<existing_notebook_child>)`: Switches to an existing `Tab (Frame)` which is specified in the arguments.
+  ```
+  notebook.select(tab1)
+  ```
+- `forget(<existing_notebook_child>")`: Hides an existing `Tab (Frame)` (Removes it from the display but doesn't destroy it).
+  ```
+  notebook.forget(tab1)
+  ```
+- `index(<existing_notebook_child>")`: Gets the `Numerical_Index` of a `Tab`.
+  ```
+  print(notebook.index(tab1)) # Output: 0 (if tab1 is the first tab)
+  ```
+- `tab(<existing_notebook_child>, attribute = "Value")`: It is used to `Get` or `Set` properties of a specific `Tab`. It allows you to `Modify Tab Attributes` **dynamically**.
+  ```
+  notebook.tab(tab1, text="New Home")
+  ```
+- `tab(<existing_notebook_child>, attribute = "Value")`: It is used to `Get` or `Set` properties of a specific `Tab`. It allows you to `Modify Tab Attributes` **dynamically**.
+  ```
+  notebook.tab(tab1, text="New Home")
+  ```
 <br>
 
 ---
