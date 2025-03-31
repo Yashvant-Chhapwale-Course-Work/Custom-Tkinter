@@ -1114,7 +1114,13 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Packaging a Python Script into a Standalone (.exe) using PyInstaller:
-
+### What is PyInstaller?
+- `PyInstaller` is a Python tool that packages **Python Scripts** into **Standalone Executable (`.exe`)** files.
+- This allows you to run Python programs **without requiring Python to be installed** on your system.
+- It is **Customizable** i.e, we can add `Icons`,`Hidden Imports`, and `Additional Files`.
 <br>
 
+### PyInstaller Installation:
+- 
+<br>
 ---
