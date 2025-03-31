@@ -1137,7 +1137,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 
 ### PyInstaller Flags:
 |Sr. No. |PyInstaller Flag                                            |Description                                                                                       |
-|========|============================================================|==================================================================================================|
+|--------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |1       |`--onefile`                                                 |Create a single **executable (.exe)**.                                                            |
 |2       |`--noconsole`                                               |Hides **Console Window** (for GUI).                                                               |
 |3       |`--icon=<filepath>`                                         |Set **Custom Icon** for the executable.                                                           |
