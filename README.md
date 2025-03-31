@@ -1115,7 +1115,21 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 ---
 
 ## Styling ttk.Notebook( ) using ttk.Style( ) Function:
+- The `ttk.Notebook()` widget creates Tabbed Interfaces, but its default style is quite basic. You can **Customize** it using the `ttk.Style()` class.
+- **CODE:**
+  ```
+  # Create an instance of the "ttk.Style()" class
+  style = ttk.Style()
+  
+  # Configure the "ttk.Notebook()" Attributes
+  style.configure("TNotebook", background="#2e2e2e", foreground="#000000", borderwidth=0, padding=[0, 1])  
 
+  # Style the ttk.Notebook() "Tabs (Frames)"
+  style.configure("TNotebook.Tab", background="#242424", foreground="#ffc300", padding=[10, 6], font=("Comic Sans MS", 10, "normal"), corner_radius=0)  
+
+  # Configure the "Selected Tab's" Attributes
+  style.map("TNotebook.Tab", background=[("selected", "#1d1d1d")], foreground=[("selected", "#ffd60a")], borderwidth="0")
+  ```
 <br>
 
 ---
