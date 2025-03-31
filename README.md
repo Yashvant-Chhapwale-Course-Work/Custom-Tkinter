@@ -1144,4 +1144,5 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 |4       |`--add-data "<filepath>"`                                   |Adds **additional files and resources** to the bundled executable.                                |
 
 <br>
+
 ---
