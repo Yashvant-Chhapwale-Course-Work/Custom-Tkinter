@@ -1056,6 +1056,8 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
   ```
   notebook.pack(exppand=True, fill="both")
   ```
+  <br>
+  
 ### Important Notebook Functions:
 - `add(<notebook_child>, text="Tab_name")`: Adds a new `Tab (Frame)` to the Notebook.
   ```
