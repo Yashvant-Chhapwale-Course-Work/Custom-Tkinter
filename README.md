@@ -823,7 +823,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### 2. CTkTextbox():
-- A `CTkSlider()` is a `Multi-Line Text Input` Widget used for `Longer String` input, such as **comments**, **messages**, or **notes**.
+- A `CTkTextbox()` is a `Multi-Line Text Input` Widget used for `Longer String` input, such as **comments**, **messages**, or **notes**.
 - **CODE:**
   ```
    import customtkinter as ctk
