@@ -43,7 +43,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` 🔗 CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
 | 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` 🔗 CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
 | 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` 🔗 CONTENT `](#setting-window-icon)                                                  |
-| 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` 🔗 CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
+| 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` 🔗 CONTENT `](#creating-custom_tkinter-frames-and-scrollabe_frames)                  |
 | 8.  **Displaying Text and Images using Custom-Tkinter Labels**                                                 | >> [` 🔗 CONTENT `](#creating-custom_tkinter-labels-for-displaying-text-and-images)        |
 | 9.  **Custom-Tkinter Buttons and Segmented-Buttons**                                                           | >> [` 🔗 CONTENT `](#creating-custom_tkinter-buttons-and-segmented_buttons)                |
 | 10. **Custom-Tkinter Check_Box and Combo_Box**                                                                 | >> [` 🔗 CONTENT `](#creating-custom_tkinter-check_box-and-combo_box)                      |
