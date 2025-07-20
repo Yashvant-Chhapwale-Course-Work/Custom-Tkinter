@@ -1194,14 +1194,13 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ### Nuitka Flags:
-|Sr. No. |PyInstaller Flag                                            |Description                                                                                       |
-|--------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-|1       |`--standalone`                                              |Create a single **executable (.exe)**.                                                         |
-|2       |`--enable-plugin=<pluginName>`                              |Hides **Console Window** (for GUI).                                              |
-|3       |`--include-data-dir=<source>=<destination>`                 |Set **Custom Icon** for the executable.                                   |
-|4       |`--windows-icon-from-ico=<filepath>`                        |Adds **additional files and resources** to the bundled executable.                     |
-|5       |`--windows-console-mode=disable`                            |Adds **additional files and resources** to the bundled executable.                     |
-
+|Sr. No. |PyInstaller Flag                                            |Description                                                                                                                                                   |
+|--------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|1       |`--standalone`                                              |Create a single **Executable (.exe)** File.                                                                                                                   |
+|2       |`--enable-plugin=<pluginName>`                              |It activates a specific **Nuitka Plugin** to correctly handle the complexities of certain **Python Libraries**.                                               |
+|3       |`--include-data-dir=<source>=<destination>`                 |This command includes **Non-Code Data Files**. It copies the entire directory from your **<source>** Folder into the **<destination>** / **build** Directory. |
+|4       |`--windows-icon-from-ico=<filepath>`                        |Sets the Path for **Custom Icon** for the **Executable**.                                                                                                     |
+|5       |`--windows-console-mode=disable`                            |Hides **Console Window** (for GUI).                                                                                                                           |
 <br>
 
 ---
