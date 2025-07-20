@@ -55,6 +55,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 | 16. **Creating a Tabbed Interface using Tkinter's Notebook Widget**                                            | >> [` 🔗 CONTENT `](#creating-a-tabbed-interface-using-ttknotebook-)                       |
 | 17. **Styling Tkinter's Notebook Widget using Style() Function**                                               | >> [` 🔗 CONTENT `](#styling-ttknotebook--using-ttkstyle--function)                        |
 | 18. **Packaging a Python Script into an EXE using PyInstaller**                                                | >> [` 🔗 CONTENT `](#packaging-a-python-script-into-a-standalone-exe-using-pyinstaller)    |
+| 19. **Packaging a Python Script into an EXE using Nuitka**                                                     | >> [` 🔗 CONTENT `](#packaging-a-python-script-into-a-standalone-exe-using-nuitka)         |
 </div>
 
 ---
@@ -1133,6 +1134,7 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ---
+<br>
 
 ## Packaging a Python Script into a Standalone (.exe) using PyInstaller:
 ### What is PyInstaller?
@@ -1167,3 +1169,40 @@ CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with 
 <br>
 
 ---
+<br>
+
+## Packaging a Python Script into a Standalone (.exe) using Nuitka:
+### What is Nuitka?
+- `Nuitka` is a **Python Compiler** that translates your scripts into `C code`, creating a highly optimized **Standalone Executable** (`.exe`).
+- This allows you to distribute and run `Python` programs without requiring Python to be installed on the target system.
+- It is highly customizable, allowing you to **embed** `icons`, **include** `data files`, and **manage** `dependencies` with plugins.
+<br>
+
+### Nuitka Installation:
+- Paste the following prompt in your **Terminal** to install `Nuitka`:
+  ```
+  pip install nuitka
+  ```
+<br>
+
+### Packaging a Python Script:
+- Paste the following prompt in your **Terminal** to package a `Python Script` into `Standalone Executable (.exe)`:
+  ```
+    nuitka --standalone --enable-plugin=<pluginName> --include-data-dir=<source>=<destination> --windows-icon-from-ico=<filepath> --windows-console-mode=disable <filename>.py    
+  ```
+  **`Note:`** Replace `<filename>` with your `Python_Script's` Name which you want to be bundled and `<filepath>` with your `Application_Icon's` File Path.
+<br>
+
+### Nuitka Flags:
+|Sr. No. |PyInstaller Flag                                            |Description                                                                                       |
+|--------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|1       |`--standalone`                                              |Create a single **executable (.exe)**.                                                         |
+|2       |`--enable-plugin=<pluginName>`                              |Hides **Console Window** (for GUI).                                              |
+|3       |`--include-data-dir=<source>=<destination>`                 |Set **Custom Icon** for the executable.                                   |
+|4       |`--windows-icon-from-ico=<filepath>`                        |Adds **additional files and resources** to the bundled executable.                     |
+|5       |`--windows-console-mode=disable`                            |Adds **additional files and resources** to the bundled executable.                     |
+
+<br>
+
+---
+
